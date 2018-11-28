@@ -20,7 +20,6 @@ def get_dataframe_from_json(content):
 
 
 # UTILS PANDAS FUNCTIONS
-
 def get_columns_name(df):
     return df.dtypes
 
