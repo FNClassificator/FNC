@@ -1,13 +1,12 @@
-from src.fake_news_detector.classificators.lda import LDA
-from src.fake_news_detector.dataset import dataset
+from src.fake_news_detector.helpers.process_data import pre_process
 
 # OBJECTIVE: Classificate by title
 
 # 1. Get dataset
-data = dataset.modelate_dataset()
+dataset = pre_process.modelate_dataset()
 
 # 2. Clean title
-
+clean_title(dataset)
 
 # 3. Vectorize
 
