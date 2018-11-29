@@ -5,15 +5,15 @@ from src.fake_news_detector.helpers.nlp import clean_text
 from src.fake_news_detector.helpers.nlp import  clean_text
 
 def modelate_dataset():
-    path = 'src/fake_news_detector/data/tmp.py'
+    path = '/home/elenaruiz/Documents/FNC/src/fake_news_detector/data/tmp.json'
     # Read file
-    io.read_json_file(path)
+    content = io.read_json_file(path)
     # Create dataframe
-    return dataframe.get_dataframe_from_json()
+    return dataframe.get_dataframe_from_json(content)
 
 # name: original column
 def tokenize_by_word_and_clean(dataset, name):
     new_name = name + '_sent'
     dataset[new_name] = dataset[name] # Copy of column
-    for index, row in dataset.iterrow():
+    for index, row in dataset.iterrows():
         row[new_name] = clean_text.clean_text_words(row[new_name])

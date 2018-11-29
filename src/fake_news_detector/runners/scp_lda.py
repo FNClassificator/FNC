@@ -6,7 +6,7 @@ from src.fake_news_detector.helpers.process_data import pre_process
 dataset = pre_process.modelate_dataset()
 
 # 2. Clean title
-clean_title(dataset)
+pre_process.tokenize_by_word_and_clean(dataset, 'title')
 
 # 3. Vectorize
 

@@ -1,4 +1,4 @@
-from app.utils import log
+from src.utils import log
 import json
 
 # Read JSON file
