@@ -1,4 +1,4 @@
-from src.fake_news_detector.helpers.process_data import tokenize as tk
+from src.fake_news_detector.helpers.nlp import tokenize as tk
 
 """ 
 Do all process
