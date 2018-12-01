@@ -1,6 +1,8 @@
 from src.fake_news_detector.helpers.process_data import pre_process
 from src.fake_news_detector.helpers.nlp import feature_extractions as fe
 
+import numpy as np
+from sklearn.lda import LDA
 # OBJECTIVE: Classificate by title
 
 # 1. Get dataset
@@ -36,9 +38,12 @@ print(dataset["title_polarity"][0])
 # 3. Normalize
 
 
+# 4. Split in training and validation
+X = dataset[['title_perct_adj','title_perct_noun','title_subjectivity','title_polarity']]
+y = dataset['result']
 # 4. Create LDA classificator
-
-
+clf = LDA()
+clf.fit(X, y)
 # 5. Predict
 
 
