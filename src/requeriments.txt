@@ -2,3 +2,6 @@ nltk
 pandas
 numpy
 sklearn
+textblob
+bs4
+jupyter
