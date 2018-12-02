@@ -4,3 +4,5 @@ numpy
 sklearn
 textblob
 bs4
+jupyter
+tk
