@@ -1,7 +1,7 @@
 import requests
 
 from bs4 import BeautifulSoup
-from app.fake_news_detector.scrapper.css_attributes import *
+from src.scripts.css_attributes import *
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.106 Safari/537.36'}
@@ -39,8 +39,8 @@ def make_request(url, attr):
 
 def get_variable(var):
     switcher = {
-        'abc.com': ABC
-        'lavanguardia.com': LA_VANGUARDIA
+        'abc.com': ABC,
+        'lavanguardia.com': LA_VANGUARDIA,
         'marca.com': MARCA
     }
     return switcher.get(var, "Invalid")
