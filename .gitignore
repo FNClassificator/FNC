@@ -103,9 +103,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-<<<<<<< HEAD
-.idea/
-=======
 .idea/
 .vscode/
->>>>>>> 37963e40f039b23a701f166970789a217322fa63
+
+src/__init__.py
