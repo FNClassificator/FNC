@@ -1,0 +1,160 @@
+{
+    "articles": {
+        "abc.es": [
+            "https://www.abc.es/familia/vida-sana/abci-comida-organica-dieta-reduce-riesgo-cancer-201810231336_noticia.html",
+            "https://www.abc.es/play/series/noticias/abci-simpson-deciden-matar-para-evitar-acusaciones-racismo-201810281723_noticia.html",
+            "https://www.abc.es/play/television/noticias/abci-bertin-osborne-sobre-inmigrantes-no-todos-mansion-pablo-iglesias-201806211126_noticia.html",
+            "https://www.abc.es/play/television/noticias/abci-policia-intenta-detener-joaquin-reyes-caracterizado-como-puigdemont-201802221838_noticia.html",
+            "https://www.abc.es/sociedad/abci-union-europea-podria-prohibir-kebabs-riesgos-para-salud-201712021351_noticia.html",
+            "https://www.abc.es/internacional/abci-madeleine-albright-esta-dispuesta-convertirse-islam-protesta-contra-trump-201701270955_noticia.html"
+        ],
+        "lavanguardia.com": [
+            "https://www.lavanguardia.com/comer/al-dia/20181105/452749799482/restaurante-vegetariano-bangkok-carne-humana.html",
+            "https://www.lavanguardia.com/politica/20180220/44945974935/suiza-avisa-no-autorizara-extradicion-delitos-politicos-anna-gabriel.html"
+        ],
+        "marca.com": [
+            "https://www.marca.com/tiramillas/musica/2018/11/13/5bea9ab6268e3ef12c8b45b2.html",
+            "http://www.marca.com/tiramillas/actualidad/2017/09/25/59c927ff468aebdb258b457e.html",
+            "http://www.marca.com/tiramillas/actualidad/2017/07/12/5965dd67ca47410d318b4576.html"
+        ],
+        "mediterraneodigital.com": [
+            "https://www.mediterraneodigital.com/espana/galicia/ser-gay-o-lgtbi-sumara-puntos-para-ser-funcionario.html",
+            "https://www.mediterraneodigital.com/espana/espana/el-gobierno-prohibira-el-dia-del-padre-y-el-dia-de-la-madre-para-no-ofender-a-los-gais.html",
+            "https://mediterraneodigital.com/espana/comunidad-de-madrid/madrid-multa-a-echenique-por-hacer-obras-ilegales-en-su-piso-de-lujo.html",
+            "https://www.mediterraneodigital.com/identitarios/ultimas-noticias-identitarios/identitarios-2/podemos-creara-en-espana-las-nuevas-playas-para-mujeres-musulmanas.html",
+            "https://www.mediterraneodigital.com/espana/extremadura/pedro-sanchez-tambien-enchufa-a-su-hermano-en-la-diputacion-de-badajoz.html",
+            "https://www.mediterraneodigital.com/espana/politica/ada-colau-ofrece-contratos-de-trabajo-a-todos-los-inmigrantes-del-aquarius.html",
+            "https://www.mediterraneodigital.com/espana/espana/el-terrorista-del-atentado-de-manchester-fue-rescatado-por-reino-unido-como-refugiado.html",
+            "https://www.mediterraneodigital.com/sociedad-y-tiempo-libre/ultimas-noticias-sociedad-y-tiempo-libre/st1/los-transexuales-podran-viajar-gratis-para-siempre-en-autobus-y-metro-por-la-igualdad.html",
+            "https://www.mediterraneodigital.com/feminismo/feminazis-2/las-feministas-piden-prohibir-la-guitarra-espanola-tocar-la-guitarra-es-como-violar.html",
+            "https://www.mediterraneodigital.com/espana/comunidad-de-madrid/carmena-substituye-a-los-reyes-magos-de-la-cabalgata-de-vallecas-por-tres-drag-queen.html",
+            "https://www.mediterraneodigital.com/espana/andalucia/el-isis-lanza-una-yihad-animal-los-islamistas-empiezan-a-matar-a-nuestros-perros.html",
+            "https://www.mediterraneodigital.com/identitarios/ultimas-noticias-identitarios/identitarios-1/las-bases-de-podemos-exigen-a-espana-que-pida-perdon-a-los-musulmanes-por-la-toma-de-granada.html",
+            "https://www.mediterraneodigital.com/espana/ceuta-y-melilla/musulmanes-exigen-que-se-prohiba-a-perez-reverte-entrar-en-melilla-por-islamofobo.html",
+            "https://www.mediterraneodigital.com/sucesos-espana/ultimas-noticias-sucesos-espana/se4/un-inmigrante-afgano-tira-a-una-chica-por-las-escaleras-del-metro.html",
+        ],
+        "alertadigital.com": [
+            "http://www.alertadigital.com/2018/09/13/la-nueva-ministra-de-sanidad-en-2014-si-el-estado-islamico-degolla-ninos-en-irak-es-por-culpa-de-aznar-no-del-islam/",
+            "http://www.alertadigital.com/2018/08/28/el-caos-se-apodera-de-espana-un-grupo-de-manteros-intenta-asaltar-el-cuartel-de-la-policia-local-en-benicarlo-para-recuperar-la-mercancia-falsificada-confiscada/",
+            "http://www.alertadigital.com/2018/05/13/quim-torra-el-psicopata-elegido-por-puigdemon-para-presidir-la-generalidad-se-puede-considerar-al-espanol-como-un-elemento-de-la-raza-africana/",
+            "http://www.alertadigital.com/2016/03/28/los-musulmanes-demandaran-a-espana-ante-el-tribunal-de-estrasburgo-por-las-procesiones-de-semana-santa-es-una-ofensa-al-islam/",
+            "http://www.alertadigital.com/2017/01/28/el-gobierno-de-merkel-autoriza-retirar-la-custodia-de-sus-hijos-a-los-padres-alemanes-que-viertan-opiniones-en-internet-consideradas-racistas/",
+        ],
+        "cataladigital.com" : [
+            "http://cataladigital.cat/2018/10/19/incidente-en-el-prat-los-escoltas-de-albert-rivera-impiden-que-el-politico-pase-un-control-antidroga/",
+        ],
+        "thepatriota.com": [
+            "https://thepatriota.com/la-mili-sera-obligatoria-en-2019-para-los-jovenes-entre-18-y-29-anos-y-desempleados-menores-de-35-anos/"
+        ],
+        "europapress.com": [
+            "http://www.europapress.es/madrid/noticia-ayuntamiento-cede-palacete-tres-cantos-acoger-migrantes-20180815125925.html",
+            "http://www.europapress.es/nacional/noticia-amnistia-internacional-rechaza-llamar-eta-grupo-terrorista-20111216124909.html",
+            "http://www.europapress.es/epsocial/noticia-violencia-genero-principal-causa-muerte-mujeres-15-44-anos-todo-mundo-20101116141947.html",
+        ],
+        "esdiario.com": [
+            "https://www.esdiario.com/elsemanaldigital/824517438/Carmen-Calvo-exige-que-desaparezca-el-queso-Tetilla-por-considerarlo-sexista.html",
+        ],
+        "gomeraactualidad.com": [
+            "http://www.gomeraactualidad.com/articulo/espana/rechazan-piso-refugiados-sirios-no-tener-ascensor/20151008210015014359.html",
+        ],
+        "casoaislado.com": [
+            "http://www.gomeraactualidad.com/articulo/espana/rechazan-piso-refugiados-sirios-no-tener-ascensor/20151008210015014359.html",
+            "http://www.periodistadigital.com/politica/autonomias/2018/07/22/bomberos-catalanes-organizan-un-cuerpo-armado-y-violento-contra-los-espanoles.shtml",
+        ],
+        "okdiario.com": [
+            "http://www.gomeraactualidad.com/articulo/espana/rechazan-piso-refugiados-sirios-no-tener-ascensor/20151008210015014359.html",
+            "https://okdiario.com/espana/cataluna/2018/04/24/alcaldesa-gerona-convierte-mentiras-del-1-o-conjunto-escultorico-2166099",
+            "https://look.okdiario.com/estilo/tendencias/2018/01/17/camiseta-palentino-macaulay-culkin-338540",
+            "https://okdiario.com/espana/cataluna/2018/01/11/cuelgan-estelada-ventana-sala-profesores-escuela-publica-arte-barcelona-1679246",
+            "https://okdiario.com/espana/cataluna/2017/10/24/asesor-rufian-pienso-dar-conferencias-tecnicas-cuantitativas-violacion-prepuberes-1447999",
+            "https://okdiario.com/espana/andalucia/2017/10/16/podemos-malaga-soga-bandera-espana-despliega-corea-del-norte-1423876",
+            "https://okdiario.com/economia/2017/01/23/afectados-del-caso-volkswagen-denuncian-facua-les-estafado-mas-1-millon-euros-688261",
+        ],
+        "periodistadigital.com": [
+            "http://www.periodistadigital.com/politica/autonomias/2018/07/22/bomberos-catalanes-organizan-un-cuerpo-armado-y-violento-contra-los-espanoles.shtml",
+        ],
+        "cuatro.com": [
+            "https://www.cuatro.com/deportes/croacia-donara-dinero-mundial-causas-beneficas_0_2596650092.html",
+        ],
+        "elplural.com": [
+            "https://www.elplural.com/politica/espana/el-parlamento-europeo-estudia-una-peticion-para-prohibir-la-tauromaquia_77233102",
+        ],
+        "antena3.com": [
+            "https://www.antena3.com/recetas-cocinatis/comer/cinco-riesgos-beber-agua-helada_201806275b339f5e0cf2ac5d68570149.html",
+        ],
+        "lasexta.com": [
+            "https://www.lasexta.com/noticias/deportes/mundial-2018-rusia/ultras-rusos-y-polacos-se-enfrentan-en-las-calles-de-moscu_201806195b28fcf40cf2778719f6f8ee.html",
+            "https://amp.lasexta.com/noticias/sociedad/pareja-descubre-que-son-mellizos-acudir-clinica-fertilidad_2017041558f2347f0cf2abec9e1fad86.html",
+        ],
+        "elperiodico.com": [
+            "https://www.elperiodico.com/es/extra/20180612/entierra-padre-coche-lujo-bmw-promesa-6871820",
+        ],
+        "elmundo.es": [
+            "http://www.elmundo.es/cataluna/2018/05/07/5aef401c468aebea378b4611.html",
+            "http://www.elmundo.es/espana/2017/05/25/5926b25ae2704e231b8b45b5.html",
+            "http://www.elmundo.es/f5/comparte/2017/03/07/58be762fe5fdea1b3e8b4586.html",
+            "http://www.elmundo.es/andalucia/2016/06/07/57570e9922601d71378b460e.html",
+        ],
+        "20minutos.com": [
+            "https://www.20minutos.es/noticia/3313735/0/aerolineas-empiezan-cobrar-ir-bano/",
+        ],
+        "elpais.com": [
+            "https://elpais.com/economia/2012/11/21/actualidad/1353530869_049872.html",
+            "https://elpais.com/internacional/2017/01/22/estados_unidos/1485105920_597756.html",
+            "https://elpais.com/politica/2015/01/09/actualidad/1420807079_139451.html",
+        ],
+        "gaceta.es": [
+            "https://gaceta.es/espana/mentiras-libro-la-asturias-una-nacion-diferente-espana-20180118-1059/",
+            "https://gaceta.es/espana/alerta-en-huelva-tras-el-robo-de-un-arma-a-un-policia-local-20180104-1618/",
+            "https://gaceta.es/noticias/feminista-aborta-bebe-nino-podia-traer-monstruo-mundo-03032017-1718/",
+        ],
+        "elcorreo.com": [
+            "https://www.elcorreo.com/bizkaia/sociedad/201702/02/suecia-dara-sueldo-abuelas-20170202093841.html",
+        ],
+        "elespanol.com": [
+            "https://cronicaglobal.elespanol.com/cronica-directo/puticlub-cesta-navidad-cura_107531_102.html",
+            "https://www.elespanol.com/social/20171019/255474745_0.html",
+            "https://www.elespanol.com/corazon/casas-reales/20170802/235976627_0.html",
+        ],
+        "haynoticias.es": [
+            "https://haynoticia.es/se-niega-pagar-puticlub-creia-habia-ligado2/",
+            "https://haynoticia.es/expulsado-ikea-cagar-bano-muestra5/",
+            "https://haynoticia.es/partir-del-1-septiembre-las-boquillas-los-alcoholimetros-seran-pago4444/",
+            "https://haynoticia.es/2la-dgt-obligara-a-los-copilotos-pasar-tambien-test-alcoholemia-3333/",
+            "https://haynoticia.es/golpean-al-dj-una-disco-poner-despacito-10-veces-una-noche/",
+            "https://haynoticia.es/se-niega-pagar-puticlub-creia-habia-ligado2/",
+            "https://haynoticia.es/expulsado-ikea-cagar-bano-muestra5/",
+            "https://haynoticia.es/partir-del-1-septiembre-las-boquillas-los-alcoholimetros-seran-pago4444/",
+            "https://haynoticia.es/2la-dgt-obligara-a-los-copilotos-pasar-tambien-test-alcoholemia-3333/",
+            "https://haynoticia.es/la-mili-sera-obligatoria-los-parados-rechacen-trabajos-del-inem/",
+        ],
+        "ecoportal.net": [
+            "https://www.ecoportal.net/paises/america-latina/arroz-plastico-esta-invadiendo-latinoamerica-aprende-como-identificarlo/",
+        ],
+        "europafm.com": [
+            "https://www.europafm.com/programas/levantate-y-cardenas/noticias/pastor-devorado-cocodrilos-creerse-jesucristo-intentar-caminar-agua_20170516591b252c0cf27d4ef62a2304.html",
+            "https://www.europafm.com/programas/ponte-a-prueba/audios-podcast/muere-masturbarse-veces-seguidas_201409105629dbdc6584a80e0890c476.html",
+        ],
+        "elconfidencialdigital.com": [
+            "https://www.elconfidencialdigital.com/articulo/seguridad/Llega-Espana-DGT-ilocalizables-detectores/20150522124717077320.html",
+        ],
+        "elinfobae.com": [
+            "https://www.infobae.com/2015/07/27/1744284-aumentaron-el-sueldo-los-presos-ahora-ganan-46-mas-que-un-jubilado/",
+        ],
+        "eleconomista.es": [
+            "http://www.eleconomista.es/ecomotor/motor/noticias/8050554/12/16/Un-camion-camuflado-y-con-radar-el-arma-de-la-Policia-britanica-para-multar.html",
+        ],
+        "ultimahora.com": [
+            "https://www.ultimahora.com/un-hombre-demanda-su-esposa-tener-hijos-feos-n739365.html" ,
+        ],
+        "cadenaser.com": [
+            "http://cadenaser.com/ser/2017/02/17/gente/1487316389_584496.html",   
+        ],
+        "publico.es": [
+            "https://www.publico.es/videos/602249/un-cura-y-dos-monjas-simpatizantes-de-podemos-apoyan-en-vistalegre-a-pablo-iglesias",
+        ],
+        "que.es": [
+            "https://www.que.es/curiosas/201602151201-mujer-muere-ahogada-semen-amante.html",
+        ]
+    }
+}
