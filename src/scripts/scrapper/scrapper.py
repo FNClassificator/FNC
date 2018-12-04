@@ -2,7 +2,7 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-from src.scripts.scrapper.css_attributes import *
+from src.scripts.scrapper.resources.css_attributes import *
 from src.utils import log
 from src.fake_news_detector.helpers.read_data import io
 
