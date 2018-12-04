@@ -5,3 +5,4 @@ sklearn
 textblob
 bs4
 jupyter
+requests

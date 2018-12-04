@@ -20,7 +20,7 @@ def write_json_file(path, content):
     try:
         log.info('Opening ' + path + ' file ...')
         with open(path, 'w') as outfile:
-            json.dump(content, outfile)
+            json.dump(content, outfile,  ensure_ascii=False)
             log.info(path + ' file writed.')
     except IOError as err: # whatever reader errors you care about
-        log.error('|IOError| - File not found or couldn\'t be open')
+        log.error('|IOError| - File not found or couldn\'t be open to write')
