@@ -1,6 +1,6 @@
 import os
-from src.fake_news_detector.helpers.read_data import io
-from src.fake_news_detector.helpers.translate import translate
+from src.utils import io
+from src.utils import translate
 
 
 def request_title_subtitle(content):

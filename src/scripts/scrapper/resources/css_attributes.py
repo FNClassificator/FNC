@@ -50,10 +50,6 @@ MEDITERRANEO = {
         "name": "h2",
         "attr": {"class": "contentheading"}
     },
-    "subtitle":{
-        "name": "h2",
-        "attr": { "class": "contentheading"}
-    },
     "text": {
         "name": "div",
         "attr": { "id": "medite-articulo"}
@@ -63,9 +59,6 @@ MEDITERRANEO = {
 
 ALERTADIGITAL = {
     "title": {
-        "name": "h2"
-    },
-    "subtitle":{
         "name": "h2"
     },
     "text": {
@@ -79,10 +72,6 @@ CATALADIGITAL = {
         "name": "h1",
         "attr": { "class": "post-title"}
     },
-    "subtitle":{
-        "name": "h1",
-        "attr": { "class": "post-title"}
-    },
     "text": {
         "name": "div",
         "attr": { "class": "post-content"}
@@ -93,10 +82,6 @@ EUROPAPRESS = {
     "title": {
         "name": "h1",
         "attr": { "class": "titular" }
-    },
-    "subtitle":{
-        "name": "h1",
-        "attr": { "class": "titular"}
     },
     "text": {
         "name": "div",
@@ -138,9 +123,6 @@ PERIODISTADIGITAL = {
     "title": {
         "name": "h1"
     },
-    "subtitle":{
-        "name": "h1"
-    },
     "text": {
         "name": "div",
         "attr": { "class": "text-block"}
@@ -152,12 +134,190 @@ OKDIARIO = {
         "name": "h1",
         "attr": {"class": "entry-title"}
     },
-    "subtitle": {
-        "name": "h1",
-        "attr": {"class": "entry-title"}
-    },
     "text": {
         "name": "div",
         "attr": {"itemprop": "articleBody"}
+    }
+}
+
+ELPLURAL = {
+    "title": {
+        "name": "h1"
+    },
+    "subtitle":{
+        "name": "h2"
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "article-body"}
+    }
+}
+
+ANTENA3 = {
+    "title": {
+        "name": "h1",
+        "attr": {"class": "title-new"}
+    },
+    "subtitle":{
+        "name": "sumary",
+        "attr": { "class": "entradilla"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "itemprop":"articleBody"}
+    }
+}
+
+LASEXTA = {
+    "title": {
+        "name": "h1"
+    },
+    "subtitle":{
+        "name": "div",
+        "attr": { "class": "summary"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "contenido" }
+    }
+}
+
+ELPERIODICO = {
+    "title": {
+        "name": "h1",
+        "attr": { "class": "title"}
+    },
+    "subtitle":{
+        "name": "div",
+        "attr": { "class": "subtitle"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "ep-detail-body" }
+    }
+}
+
+ELMUNDO = {
+    "title": {
+        "name": "h1",
+        "attr": { "itemprop": "headline"}
+    },
+    "subtitle":{
+        "name": "div",
+        "attr": { "class": "subtitle-items"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "itemprop": "articleBody" }
+    }
+}
+
+XXMINUTOS = {
+    "title": {
+        "name": "h1",
+        "attr": { "class": "article-title"}
+    },
+    "subtitle":{
+        "name": "div",
+        "attr": { "class": "gtm-article-lead"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "gtm-article-text" }
+    }
+}
+
+ELPAIS = {
+    "title": {
+        "name": "h1",
+        "attr": { "class": "articulo-titulo"}
+    },
+    "subtitle":{
+        "name": "h2",
+        "attr": { "class": "articulo-subtitulo"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "articulo-cuerpo" }
+    }
+}
+
+LAGACETA = {
+    "title": {
+        "name": "h1",
+        "attr": { "class": "entry-title"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "id": "post-content" }
+    }
+}
+
+# ELESPANOL = {
+#     "title": {
+#         "name": "h1"
+#     },
+#     "subtitle":{
+#         "name": "h2"
+#     },
+#     "text": {
+#         "name": "div",
+#         "attr": { "class": "voc-detail-grid" }
+#     }
+# }
+
+HAYNOTICIAS = {
+    "title": {
+        "name": "h1",
+        "attr": { "class": "entry-title"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "entry-content" }
+    }
+}
+
+ECOPORTAL = {
+    "title": {
+        "name": "h1",
+        "attr": { "class": "entry-title"}
+    },
+    "subtitle": {
+        "name": "div",
+        "attr": { "class": "entry-headline h5"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "entry-content" }
+    }
+}
+
+EUROPAFM = {
+    "title": {
+        "name": "h1",
+        "attr": { "class": "titular"}
+    },
+    "subtitle": {
+        "name": "summary",
+        "attr": { "class": "entradilla"}
+    },
+    "text": {
+        "name": "section",
+        "attr": { "class": "texto-noticia" }
+    }
+}
+
+ELCONFIDENCIAL = {
+    "title": {
+        "name": "h1",
+        "attr": { "class": "title text-center"}
+    },
+    "subtitle": {
+        "name": "h3",
+        "attr": { "class": "subtitle text-center"}
+    },
+    "text": {
+        "name": "section",
+        "attr": { "class": "body seguridad" }
     }
 }
