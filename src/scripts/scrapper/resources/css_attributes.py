@@ -317,7 +317,96 @@ ELCONFIDENCIAL = {
         "attr": { "class": "subtitle text-center"}
     },
     "text": {
-        "name": "section",
+        "name": "div",
         "attr": { "class": "body seguridad" }
+    }
+}
+
+ELINFOBAE = {
+    "title": {
+        "name": "h1"
+    },
+    "subtitle": {
+        "name": "span",
+        "attr": { "class": "subheadline"}
+    },
+    "text": {
+        "name": "p",
+        "attr": { "class": "element element-paragraph" }
+    }
+}
+
+ELECONOMISTA = {
+    "title": {
+        "name": "h1"
+    },
+    "text": {
+        "name": "article"
+    }
+}
+
+ULTIMAHORA = {
+    "title": {
+        "name": "h1",
+        "attr": { "class": "title"}
+    },
+    "subtitle": {
+        "name": "h2",
+        "attr": { "class": "excerpt "}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "body-content note-body" }
+    }
+}
+
+CADENASER = {
+    "title": {
+        "name": "h1",
+        "attr": { "itemprop": "headline"}
+    },
+    "subtitle": {
+        "name": "h2",
+        "attr": { "itemprop": "alternativeHeadline"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "cuerpo" }
+    }
+}
+
+PUBLICO = {
+    "title": {
+        "name": "h2"
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "texto" }
+    }
+}
+
+QUE = {
+    "title": {
+        "name": "h1",
+        "attr": { "class": "entry-title"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "class": "td-post-content" }
+    }
+}
+
+FCINCO = {
+    "title": {
+        "name": "h1",
+        "attr": { "itemprop": "headline"}
+    },
+    "subtitle":{
+        "name": "p",
+        "attr": { "class": "summary-lead"}
+    },
+    "text": {
+        "name": "div",
+        "attr": { "itemprop": "articleBody" }
     }
 }

@@ -12,6 +12,7 @@ headers = {
 
 TYPE_TWO = [ELPLURAL]
 TYPE_THREE = [HAYNOTICIAS]
+TYPE_FOUR = [ELINFOBAE, PUBLICO]
 
 def get_title(soup, attr):
     # Get title
@@ -33,12 +34,19 @@ def get_subtitle(soup, attr):
             attr['subtitle']['name'], attr['subtitle']['attr'])
     else:
         subtitle_soup = soup.find(attr['subtitle']['name'])
-    subtitle = subtitle_soup.text
-    return subtitle.replace("\n", "")
+    if subtitle_soup != None:
+        subtitle = subtitle_soup.text
+        return subtitle.replace("\n", "")
+    else:
+        return ''
 
 
 def get_body(soup, attr):
-    body_soup = soup.find(attr['text']['name'], attr['text']['attr'])
+    if 'attr' in attr['text']:
+        body_soup = soup.find(attr['text']['name'], attr['text']['attr'])
+    else:
+        body_soup = soup.find(attr['text']['name'])
+    
     paragraph_list = []
     for paragraph_soup in body_soup.find_all('p', recursive=False):
         text_aux = paragraph_soup.text
@@ -78,6 +86,17 @@ def get_body_type_three(soup,attr):
                 paragraph_list.append(text_aux)
     return paragraph_list
 
+def get_body_type_four(soup,attr):
+    body_soup = soup.find_all(attr['text']['name'], attr['text']['attr'])
+    paragraph_list = []
+    for paragraph_soup in body_soup:
+        text_aux = paragraph_soup.text
+        if text_aux:
+            text_aux = text_aux.replace("\n", "")
+            if len(text_aux) > 2:  # Check if is empty
+                paragraph_list.append(text_aux)
+    return paragraph_list
+
 
 def make_request(url, attr):
     response = requests.get(url, headers=headers)
@@ -92,13 +111,19 @@ def make_request(url, attr):
         subtitle = get_subtitle(soup, attr)
         if subtitle != -1:
             result['subtitle'] = subtitle
+        else:
+            result['subtitle'] = ''
         # Text
         if attr in TYPE_TWO:
             result['text'] = get_body_type_two(soup, attr)
         elif attr in TYPE_THREE:
             result['text'] = get_body_type_three(soup, attr)
+        elif attr in TYPE_FOUR:
+            result['text'] = get_body_type_four(soup, attr)
         else:
             result['text'] = get_body(soup, attr)
+        # URL
+        result['url'] = url
         return result
 
 def get_variable(var):
@@ -124,29 +149,36 @@ def get_variable(var):
         # 'elespanol.com': ELESPANOL
         'haynoticias.es' : HAYNOTICIAS,
         'ecoportal.net': ECOPORTAL,
-        'europafm.com': EUROPAFM
-        
+        'europafm.com': EUROPAFM,
+        'elconfidencialdigital.com': ELCONFIDENCIAL,
+        'elinfobae.com': ELINFOBAE,
+        'eleconomista.es': ELECONOMISTA,
+        'ultimahora.com': ULTIMAHORA,
+        'cadenaser.com': CADENASER,
+        'publico.es': PUBLICO,
+        'que.es': QUE,
+        'fcinco.com': FCINCO
     }
     return switcher.get(var, -1)
 
 
 def get_all_news(path, is_fake, n):
     url_list = io.read_json_file(path)
-    url_list = {
-        "europafm.com": [
-            "https://www.europafm.com/programas/levantate-y-cardenas/noticias/pastor-devorado-cocodrilos-creerse-jesucristo-intentar-caminar-agua_20170516591b252c0cf27d4ef62a2304.html",
-            "https://www.europafm.com/programas/ponte-a-prueba/audios-podcast/muere-masturbarse-veces-seguidas_201409105629dbdc6584a80e0890c476.html"
-        ]
-    }
     for key in url_list.keys():
         css_attr = get_variable(key)
         if css_attr != -1:
             for item in url_list[key]:
                 n += 1
-                result = make_request(item, css_attr)
-                result['fake'] = is_fake
-                out_path = 'src/data/articles/Article_' + str(n) + '.json'
-                io.write_json_file(out_path, result)
+                try:
+                    print('Making request of ...', item)
+                    result = make_request(item, css_attr)
+                    result['fake'] = is_fake
+                    out_path = 'src/data/articles/Article_' + str(n) + '.json'
+                    io.write_json_file(out_path, result)
+                    print('File saved!')
+                except ValueError as err:
+                    print(err)
+                    print('Problem with: ', item)
     return n
 
 
@@ -158,5 +190,5 @@ def run(n):
 
 if __name__ == '__main__':
     # From
-    n = 99
+    n = 1
     run(n)

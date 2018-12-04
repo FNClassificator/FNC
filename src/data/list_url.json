@@ -77,7 +77,6 @@
         "elmundo.es": [
             "http://www.elmundo.es/cataluna/2018/05/07/5aef401c468aebea378b4611.html",
             "http://www.elmundo.es/espana/2017/05/25/5926b25ae2704e231b8b45b5.html",
-            "http://www.elmundo.es/f5/comparte/2017/03/07/58be762fe5fdea1b3e8b4586.html",
             "http://www.elmundo.es/andalucia/2016/06/07/57570e9922601d71378b460e.html"
         ],
         "20minutos.com": [
@@ -136,5 +135,8 @@
         ],
         "que.es": [
             "https://www.que.es/curiosas/201602151201-mujer-muere-ahogada-semen-amante.html"
+        ],
+        "fcinco.com": [
+            "https://www.elmundo.es/f5/comparte/2017/03/07/58be762fe5fdea1b3e8b4586.html"
         ]
 }

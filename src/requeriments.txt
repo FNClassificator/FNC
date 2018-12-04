@@ -6,3 +6,4 @@ textblob
 bs4
 jupyter
 requests
+autopep8
