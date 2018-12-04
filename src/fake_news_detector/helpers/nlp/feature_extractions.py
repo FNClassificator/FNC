@@ -22,4 +22,8 @@ def count_adjectives(token_text):
 def get_sentiment(text):
     return TextBlob(text).sentiment
 
+
+def get_lenght(token_text):
+    return len(token_text)
+
 # Subclassificators

@@ -44,3 +44,48 @@ MARCA = {
         "attr": {"itemprop": "articleBody"}
     }
 }
+
+MARCA = {
+    "title": {
+        "name": "h1",
+        "attr": {'class': 'js-headline izquierda'}
+    },
+    "subtitle": {
+        "name": "span",
+        "attr": {"class": "subsection-type"}
+    },
+    "text": {
+        "name": "div",
+        "attr": {"itemprop": "articleBody"}
+    }
+}
+
+MEDITERRANEO = {
+    "title": {
+        "name": "h2",
+        "attr": {'class': 'contentheading'}
+    },
+    "subtitle": {
+        "name": "h2",
+        "attr": {"class": "contentheading"}
+    },
+    "text": {
+        "name": "div",
+        "attr": {"class": "item-page"}
+    }
+}
+
+ALERTADIGITAL = {
+    "title": {
+        "name": "h2",
+        "attr": {'class': 'post'}
+    },
+    "subtitle": {
+        "name": "h2",
+        "attr": {"class": "contentheading"}
+    },
+    "text": {
+        "name": "div",
+        "attr": {"class": "item-page"}
+    }
+}

@@ -18,6 +18,7 @@ dataset['title_perct_adj'] = dataset['title_token_clean'] # Copy of column
 dataset['title_perct_noun'] = dataset['title_token_clean'] # Copy of column
 dataset['title_subjectivity'] =  dataset['title_token_clean']
 dataset['title_polarity'] =  dataset['title_token_clean']
+dataset['title_length'] =  dataset['title_token_clean']
 for _, row in dataset.iterrows():
     # Extract % adjectives
     row['title_perct_adj'] = fe.count_adjectives(row['title_token_clean'])
@@ -29,6 +30,8 @@ for _, row in dataset.iterrows():
     row['title_subjectivity'] = sentiment.subjectivity
     # Polarity
     row['title_polarity'] = sentiment.polarity
+    # Row 
+    row['title_length'] = fe.get_length(row['title_token_clean'])
 
 print(dataset["title_perct_adj"][0])
 print(dataset["title_perct_noun"][0])
