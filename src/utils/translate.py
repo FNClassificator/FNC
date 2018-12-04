@@ -20,7 +20,8 @@ def make_request(list_texts):
         payload.append(aux)
 
     r = requests.post(url, data=json.dumps(payload), headers=headers)
-    return r
+    print(r.json())
+    return r.json()
 
 
 if __name__ == "__main__":
