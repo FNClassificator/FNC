@@ -46,7 +46,8 @@ def mean_word_per_sent(sent_tokens):
 
 def mean_clause_per_sent(sent_tokens):
     t_sum = 0
-    # call function to split by clauses
+    # Call Stanford tree
+    # Split tree by clauses by preposition
     return t_sum
 
 
@@ -68,18 +69,26 @@ def mean_punctuation_per_sent(sent_tokens):
 # U N C E R T A I N T Y
 
 def pert_modal_verbs(text_tokens):
-    return
+    modals = ['can', 'could', 'may', 'might', 'must', 'will', 'should', 'would']
+    suma = 0
+    for text in text_tokens:
+        if text in modals:
+            suma += 1
+    return suma/len(text_tokens)
 
 
 def pert_certainty_terms(text_tokens):
+    # DICCIONARY
     return
 
 
 def pert_generalizing_terms(text_tokens):
+    # DICCIONARY
     return
 
 
 def pert_tentative_terms(text_tokens):
+    # DICCIONARY
     return
 
 
@@ -113,7 +122,6 @@ def pert_imperative_commands(text_tokens):
 
 def pert_positive_words(text_tokens):
     return
-
 
 def pert_negative_words(text_tokens):
     return
