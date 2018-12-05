@@ -70,3 +70,42 @@ First the file `list_url.json` includes all fake news's urls that where scrapped
 2. **fake_news_detector**
 3. **fake_news_detector/runners**
 4. **scripts**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
