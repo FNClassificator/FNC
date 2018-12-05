@@ -71,17 +71,12 @@
         "antena3.com": [
             "https://www.antena3.com/recetas-cocinatis/comer/cinco-riesgos-beber-agua-helada_201806275b339f5e0cf2ac5d68570149.html"
         ],
-        "lasexta.com": [
-            "https://www.lasexta.com/noticias/deportes/mundial-2018-rusia/ultras-rusos-y-polacos-se-enfrentan-en-las-calles-de-moscu_201806195b28fcf40cf2778719f6f8ee.html",
-            "https://amp.lasexta.com/noticias/sociedad/pareja-descubre-que-son-mellizos-acudir-clinica-fertilidad_2017041558f2347f0cf2abec9e1fad86.html"
-        ],
         "elperiodico.com": [
             "https://www.elperiodico.com/es/extra/20180612/entierra-padre-coche-lujo-bmw-promesa-6871820"
         ],
         "elmundo.es": [
             "http://www.elmundo.es/cataluna/2018/05/07/5aef401c468aebea378b4611.html",
             "http://www.elmundo.es/espana/2017/05/25/5926b25ae2704e231b8b45b5.html",
-            "http://www.elmundo.es/f5/comparte/2017/03/07/58be762fe5fdea1b3e8b4586.html",
             "http://www.elmundo.es/andalucia/2016/06/07/57570e9922601d71378b460e.html"
         ],
         "20minutos.com": [
@@ -111,10 +106,6 @@
             "https://haynoticia.es/partir-del-1-septiembre-las-boquillas-los-alcoholimetros-seran-pago4444/",
             "https://haynoticia.es/2la-dgt-obligara-a-los-copilotos-pasar-tambien-test-alcoholemia-3333/",
             "https://haynoticia.es/golpean-al-dj-una-disco-poner-despacito-10-veces-una-noche/",
-            "https://haynoticia.es/se-niega-pagar-puticlub-creia-habia-ligado2/",
-            "https://haynoticia.es/expulsado-ikea-cagar-bano-muestra5/",
-            "https://haynoticia.es/partir-del-1-septiembre-las-boquillas-los-alcoholimetros-seran-pago4444/",
-            "https://haynoticia.es/2la-dgt-obligara-a-los-copilotos-pasar-tambien-test-alcoholemia-3333/",
             "https://haynoticia.es/la-mili-sera-obligatoria-los-parados-rechacen-trabajos-del-inem/"
         ],
         "ecoportal.net": [
@@ -144,5 +135,8 @@
         ],
         "que.es": [
             "https://www.que.es/curiosas/201602151201-mujer-muere-ahogada-semen-amante.html"
+        ],
+        "fcinco.com": [
+            "https://www.elmundo.es/f5/comparte/2017/03/07/58be762fe5fdea1b3e8b4586.html"
         ]
 }
