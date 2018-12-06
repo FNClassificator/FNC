@@ -1,8 +1,9 @@
 from src.fake_news_detector.helpers.process_data import pre_process
 from src.fake_news_detector.helpers.nlp import feature_extractions as fe
+from src.fake_news_detector.helpers.nlp import clean_text as ct
+from src.fake_news_detector.helpers.nlp import quantity as q
 
 import numpy as np
-from sklearn.lda import LDA
 # OBJECTIVE: Classificate by title
 
 # 1. Get dataset
@@ -14,29 +15,29 @@ print(dataset["title_token_clean"][0])
 print(dataset["title"][0])
 
 # 3. Extract informations
-dataset['title_perct_adj'] = dataset['title_token_clean'] # Copy of column
-dataset['title_perct_noun'] = dataset['title_token_clean'] # Copy of column
-dataset['title_subjectivity'] =  dataset['title_token_clean']
-dataset['title_polarity'] =  dataset['title_token_clean']
-dataset['title_length'] =  dataset['title_token_clean']
-for _, row in dataset.iterrows():
-    # Extract % adjectives
-    row['title_perct_adj'] = fe.count_adjectives(row['title_token_clean'])
-    # Extract % nouns
-    row['title_perct_noun'] = fe.count_common_nouns(row['title_token_clean'])
-    # Sentiment 
-    sentiment = fe.get_sentiment(row['title'])
-    # Subjectivity
-    row['title_subjectivity'] = sentiment.subjectivity
-    # Polarity
-    row['title_polarity'] = sentiment.polarity
-    # Row 
-    row['title_length'] = fe.get_length(row['title_token_clean'])
+# dataset['title_perct_adj'] = dataset['title_token_clean'] # Copy of column
+# dataset['title_perct_noun'] = dataset['title_token_clean'] # Copy of column
+# dataset['title_subjectivity'] =  dataset['title_token_clean']
+# dataset['title_polarity'] =  dataset['title_token_clean']
+# dataset['title_length'] =  dataset['title_token_clean']
+# for _, row in dataset.iterrows():
+#     # Extract % adjectives
+#     row['title_perct_adj'] = fe.count_adjectives(row['title_token_clean'])
+#     # Extract % nouns
+#     row['title_perct_noun'] = fe.count_common_nouns(row['title_token_clean'])
+#     # Sentiment 
+#     sentiment = fe.get_sentiment(row['title'])
+#     # Subjectivity
+#     row['title_subjectivity'] = sentiment.subjectivity
+#     # Polarity
+#     row['title_polarity'] = sentiment.polarity
+#     # Row 
+#     row['title_length'] = fe.n_words(row['title_token_clean'])
 
-print(dataset["title_perct_adj"][0])
-print(dataset["title_perct_noun"][0])
-print(dataset["title_subjectivity"][0])
-print(dataset["title_polarity"][0])
+# print(dataset["title_perct_adj"][0])
+# print(dataset["title_perct_noun"][0])
+# print(dataset["title_subjectivity"][0])
+# print(dataset["title_polarity"][0])
 
 # 3. Normalize
 
@@ -45,8 +46,8 @@ print(dataset["title_polarity"][0])
 X = dataset[['title_perct_adj','title_perct_noun','title_subjectivity','title_polarity']]
 y = dataset['result']
 # 4. Create LDA classificator
-clf = LDA()
-clf.fit(X, y)
+#clf = LDA()
+#clf.fit(X, y)
 # 5. Predict
 
 
