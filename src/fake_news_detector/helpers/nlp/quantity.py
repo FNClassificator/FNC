@@ -12,7 +12,7 @@ def n_words(text_tokens):
 
 def perct_noun_words(tag_tokens):
     total = 0
-    for token, tag in tag_tokens:
+    for _, tag in tag_tokens:
         if tag == 'NN':
             total += 1
     return total / len(tag_tokens)
@@ -86,7 +86,7 @@ def pert_certainty_terms(text_tokens):
 
 
 def pert_generalizing_terms(text_tokens):
-    # DICCIONARY
+    # Find subject and classify
     return
 
 
