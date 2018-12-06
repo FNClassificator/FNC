@@ -1,5 +1,8 @@
 
+import nltk
 
+def get_tags(token_text):
+    return nltk.pos_tag(token_text)
 
 """ ABOUT WORDS """
 
