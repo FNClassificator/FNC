@@ -56,6 +56,6 @@ def run(nmin,nmax):
         print('Done!')
 
 if __name__ == '__main__':
-    nmin = 58
-    nmax = 64
+    nmin = 112
+    nmax = 116
     run(nmin, nmax)
