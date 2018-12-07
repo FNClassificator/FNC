@@ -120,12 +120,6 @@ def pert_imperative_commands(text_tokens):
 
 # S E N T I M E N T
 
-def pert_positive_words(text_tokens):
-    return
-
-def pert_negative_words(text_tokens):
-    return
-
 def pert_emotional_phrases(text_tokens):
     return
 
