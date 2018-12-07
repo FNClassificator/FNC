@@ -1,15 +1,20 @@
 
 import nltk
 
-def get_tags(token_text):
-    return nltk.pos_tag(token_text)
-
-""" ABOUT WORDS """
 
 def n_words(text_tokens):
     return len(text_tokens)
 
+def n_sentences(sent_tokens):
+    return len(sent_tokens)
 
+# T Y P E   O F   W O R D S
+
+# Input: List of words
+def get_tags(token_text): # Aux
+    return nltk.pos_tag(token_text)
+
+# Input: List of tagged words
 def perct_noun_words(tag_tokens):
     total = 0
     for _, tag in tag_tokens:
@@ -17,7 +22,7 @@ def perct_noun_words(tag_tokens):
             total += 1
     return total / len(tag_tokens)
 
-
+# Input: List of tagged words
 def perct_adj_words(tag_tokens):
     total = 0
     for _, tag in tag_tokens:
@@ -25,7 +30,7 @@ def perct_adj_words(tag_tokens):
             total += 1
     return total / len(tag_tokens)
 
-
+# Input: List of tagged words
 def perct_verb_words(tag_tokens):
     total = 0
     for _, tag in tag_tokens:
@@ -33,10 +38,9 @@ def perct_verb_words(tag_tokens):
             total += 1
     return total / len(tag_tokens)
 
-""" ABOUT SENTENCES """
-
-def n_sentences(sent_tokens):
-    return len(sent_tokens)
+# TODO: Medium
+def perct_conj_words_per_sentence(tag_tokens):
+    return
 
 # A V E R A G E S
 
@@ -79,30 +83,31 @@ def pert_modal_verbs(text_tokens):
             suma += 1
     return suma/len(text_tokens)
 
-
+# TODO: Difficult, it has to have a model training
 def pert_certainty_terms(text_tokens):
     # DICCIONARY
     return
 
-
+# TODO: Difficult, it has to have a model training
 def pert_generalizing_terms(text_tokens):
     # Find subject and classify
     return
 
-
+# TODO: Difficult, it has to have a model training
 def pert_tentative_terms(text_tokens):
     # DICCIONARY
     return
 
-
+# TODO: Medium
 def pert_numbers_and_quantifiers(text_tokens):
     return
 
-
+# TODO: Easy
 def pert_question_marks(text_tokens):
     return
 
 # T Y P E   O F   V E R B S
+
 
 def pert_subjective_verbs(texts_tokens):
     total_verbs = 0
@@ -119,11 +124,6 @@ def pert_factive_verbs(text_tokens):
 
 
 def pert_imperative_commands(text_tokens):
-    return
-
-# S E N T I M E N T
-
-def pert_emotional_phrases(text_tokens):
     return
 
 

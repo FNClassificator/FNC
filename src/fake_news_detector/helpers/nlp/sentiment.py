@@ -57,3 +57,6 @@ def get_sentiment_by_phrases(text):
     total = len(text_list)
     return compute_sentiment(text_list,total)
 
+# TODO: Difficult
+def pert_emotional_phrases(text_tokens):
+    return
