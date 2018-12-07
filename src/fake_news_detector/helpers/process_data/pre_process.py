@@ -1,21 +1,30 @@
 from src.fake_news_detector.helpers.read_data import dataframe
-from src.fake_news_detector.helpers.read_data import io
+from src.utils import io
 from src.fake_news_detector.helpers.nlp import clean_text
 
 
 def modelate_dataset():
-    path = 'src/data/tmp.json'
-    # Read file
-    content = io.read_json_file(path)
-    # Create dataframe
-    return dataframe.get_dataframe_from_json(content)
+	articles = {
+		'articles' : []
+	}
+	n_ini = 1
+	n_fi = 116
+	for x in range(n_ini,n_fi):
+		path =  'src/data/articles_en/Article_' + str(x) + '.json'
+		# Read file
+		content = io.read_json_file(path)
+		if content != None:
+			articles['articles'].append(content)
+	# Create dataframe
+	return dataframe.get_dataframe_from_json(articles)
 
 
 # CLEANING FUNCTIONS
 
 # name: original column
 def tokenize_by_word_and_clean(dataset, name):
-    new_name = name + '_token_clean'
-    dataset[new_name] = dataset[name] # Copy of column
-    for _, row in dataset.iterrows():
-        row[new_name] = clean_text.clean_text_words(row[new_name])
+	new_name = name + '_token_clean'
+	dataset[new_name] = 'none' # Copy of column
+	for index, row in dataset.iterrows():
+		 text = clean_text.clean_text_words(row[name])
+		 dataset[index][new_name] = text

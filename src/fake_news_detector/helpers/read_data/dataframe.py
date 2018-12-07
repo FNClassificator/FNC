@@ -13,6 +13,7 @@ def get_dataframe_from_json(content):
         df = pd.DataFrame(data=content['articles'])
         log.info('Done')
         print(get_columns_name(df))
+        df.info(memory_usage='deep')
         return df
     except ValueError as err:
         log.error('|DATAFRAME.py| - Can\'t create pandas dataframe')

@@ -30,5 +30,5 @@ def clean_text_words(text):
     words_list = tk.tokenize_by_treebank_word(text)
     result = tk.remove_punctuations(words_list)
     result = tk.remove_stopwords(result)
-    #result = tk.lemma_tokens(result)
+    result = tk.lemma_tokens(result)
     return result
