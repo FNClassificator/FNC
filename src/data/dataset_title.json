@@ -1,812 +1,913 @@
 {
     "articles": [
         {
-            "title_length": 6,
-            "title_adj_words": 0.3333333333333333,
-            "title_verbs_words": 0.16666666666666666,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.5719
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.3333333333333333,
-            "title_verbs_words": 0.16666666666666666,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.1027
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.296
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.14285714285714285,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.6202
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.2857142857142857,
-            "title_verbs_words": 0.14285714285714285,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.4767
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.16666666666666666,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 9,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.1111111111111111,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.4043
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.14285714285714285,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.4215
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.14285714285714285,
-            "title_verbs_words": 0.14285714285714285,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.2732
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.14285714285714285,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.14285714285714285,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.125,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.0258
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.14285714285714285,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.5106
-        },
-        {
-            "title_length": 9,
-            "title_adj_words": 0.2222222222222222,
-            "title_verbs_words": 0.1111111111111111,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.7269
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.25,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.2263
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.6597
-        },
-        {
-            "title_length": 10,
-            "title_adj_words": 0.1,
-            "title_verbs_words": 0.2,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.1531
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.16666666666666666,
-            "title_verbs_words": 0.16666666666666666,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.5423
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 14,
-            "title_adj_words": 0.07142857142857142,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 16,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.5719
-        },
-        {
-            "title_length": 12,
-            "title_adj_words": 0.16666666666666666,
-            "title_verbs_words": 0.08333333333333333,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 9,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.1111111111111111,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.25
-        },
-        {
-            "title_length": 13,
-            "title_adj_words": 0.07692307692307693,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 12,
-            "title_adj_words": 0.16666666666666666,
-            "title_verbs_words": 0.08333333333333333,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.3612
-        },
-        {
-            "title_length": 9,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.1111111111111111,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.6908
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.2857142857142857,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.2263
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.3333333333333333,
-            "title_verbs_words": 0.3333333333333333,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.296
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.14285714285714285,
-            "title_verbs_words": 0.14285714285714285,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.5994
-        },
-        {
-            "title_length": 5,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.2732
-        },
-        {
-            "title_length": 11,
-            "title_adj_words": 0.18181818181818182,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 4,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.25,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.6124
-        },
-        {
-            "title_length": 11,
-            "title_adj_words": 0.09090909090909091,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.5267
-        },
-        {
-            "title_length": 5,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.4,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.125,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.6249
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.125,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.16666666666666666,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.4215
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.125,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.5994
-        },
-        {
-            "title_length": 10,
-            "title_adj_words": 0.1,
-            "title_verbs_words": 0.1,
-            "title_modal_verbs": 0.1,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.3333333333333333,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.1027
-        },
-        {
-            "title_length": 5,
-            "title_adj_words": 0.2,
-            "title_verbs_words": 0.2,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.5859
-        },
-        {
-            "title_length": 5,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.2,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.25,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.16666666666666666,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.4019
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.2857142857142857,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 10,
-            "title_adj_words": 0.1,
-            "title_verbs_words": 0.1,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 4,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.25,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 9,
-            "title_adj_words": 0.2222222222222222,
-            "title_verbs_words": 0.1111111111111111,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.125,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.1027
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.5106
-        },
-        {
-            "title_length": 9,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.5994
-        },
-        {
-            "title_length": 9,
-            "title_adj_words": 0.1111111111111111,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": 0.5994
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.16666666666666666,
-            "title_verbs_words": 0.3333333333333333,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.4767
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 1,
-            "sentiment": -0.7717
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.14285714285714285,
-            "title_verbs_words": 0.14285714285714285,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.3182
-        },
-        {
-            "title_length": 3,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 2,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.5994
-        },
-        {
-            "title_length": 5,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.2,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.6808
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.2263
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.3818
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.14285714285714285,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.5106
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.125,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.4939
-        },
-        {
-            "title_length": 5,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.4588
-        },
-        {
-            "title_length": 9,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.1111111111111111,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.4588
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.25,
-            "title_verbs_words": 0.25,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.4215
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.128
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.25,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.4019
-        },
-        {
-            "title_length": 9,
-            "title_adj_words": 0.1111111111111111,
-            "title_verbs_words": 0.1111111111111111,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.4404
-        },
-        {
-            "title_length": 10,
-            "title_adj_words": 0.1,
-            "title_verbs_words": 0.1,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.3612
-        },
-        {
-            "title_length": 5,
-            "title_adj_words": 0.2,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.14285714285714285,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 4,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.25,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.14285714285714285,
-            "title_verbs_words": 0.2857142857142857,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.3333333333333333,
-            "title_verbs_words": 0.3333333333333333,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.296
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.16666666666666666,
-            "title_verbs_words": 0.16666666666666666,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.25,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.4404
-        },
-        {
-            "title_length": 4,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 5,
-            "title_adj_words": 0.2,
-            "title_verbs_words": 0.2,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.2023
-        },
-        {
-            "title_length": 5,
-            "title_adj_words": 0.2,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.1027
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.125,
-            "title_verbs_words": 0.25,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.5106
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.125,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.5897
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.14285714285714285,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 10,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.1,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0516
-        },
-        {
-            "title_length": 4,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.25,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.2857142857142857,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.125,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.0516
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.14285714285714285,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.2263
-        },
-        {
-            "title_length": 6,
-            "title_adj_words": 0.3333333333333333,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.14285714285714285,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 10,
-            "title_adj_words": 0.2,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 11,
-            "title_adj_words": 0.09090909090909091,
-            "title_verbs_words": 0.18181818181818182,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.6369
-        },
-        {
-            "title_length": 9,
-            "title_adj_words": 0.1111111111111111,
-            "title_verbs_words": 0.1111111111111111,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0772
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.2857142857142857,
-            "title_verbs_words": 0.2857142857142857,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 7,
-            "title_adj_words": 0.14285714285714285,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.25,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.4588
-        },
-        {
-            "title_length": 11,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.09090909090909091,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.5994
-        },
-        {
-            "title_length": 8,
-            "title_adj_words": 0.25,
-            "title_verbs_words": 0.125,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": -0.4767
-        },
-        {
-            "title_length": 4,
-            "title_adj_words": 0.5,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
-        },
-        {
-            "title_length": 5,
-            "title_adj_words": 0.0,
-            "title_verbs_words": 0.0,
-            "title_modal_verbs": 0.0,
-            "fake": 0,
-            "sentiment": 0.0
+            "text_length": 126,
+            "text_sentences": 9,
+            "text_adj_words": 0.15873015873015872,
+            "text_verbs_words": 0.15873015873015872,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.2859,
+            "fake": 1
+        },
+        {
+            "text_length": 177,
+            "text_sentences": 9,
+            "text_adj_words": 0.1694915254237288,
+            "text_verbs_words": 0.12429378531073447,
+            "text_modal_verbs": 0.03389830508474576,
+            "sentiment": -0.10684444444444445,
+            "fake": 1
+        },
+        {
+            "text_length": 107,
+            "text_sentences": 11,
+            "text_adj_words": 0.1588785046728972,
+            "text_verbs_words": 0.14018691588785046,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.07715454545454542,
+            "fake": 1
+        },
+        {
+            "text_length": 60,
+            "text_sentences": 6,
+            "text_adj_words": 0.2,
+            "text_verbs_words": 0.2,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.047616666666666675,
+            "fake": 1
+        },
+        {
+            "text_length": 61,
+            "text_sentences": 7,
+            "text_adj_words": 0.09836065573770492,
+            "text_verbs_words": 0.14754098360655737,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.00029999999999999867,
+            "fake": 1
+        },
+        {
+            "text_length": 165,
+            "text_sentences": 11,
+            "text_adj_words": 0.20606060606060606,
+            "text_verbs_words": 0.12727272727272726,
+            "text_modal_verbs": 0.01818181818181818,
+            "sentiment": 0.3046727272727272,
+            "fake": 1
+        },
+        {
+            "text_length": 145,
+            "text_sentences": 9,
+            "text_adj_words": 0.11724137931034483,
+            "text_verbs_words": 0.13793103448275862,
+            "text_modal_verbs": 0.020689655172413793,
+            "sentiment": 0.0331888888888889,
+            "fake": 1
+        },
+        {
+            "text_length": 78,
+            "text_sentences": 4,
+            "text_adj_words": 0.11538461538461539,
+            "text_verbs_words": 0.05128205128205128,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.16192499999999999,
+            "fake": 1
+        },
+        {
+            "text_length": 301,
+            "text_sentences": 19,
+            "text_adj_words": 0.2159468438538206,
+            "text_verbs_words": 0.11627906976744186,
+            "text_modal_verbs": 0.009966777408637873,
+            "sentiment": 0.31090526315789474,
+            "fake": 1
+        },
+        {
+            "text_length": 246,
+            "text_sentences": 16,
+            "text_adj_words": 0.08943089430894309,
+            "text_verbs_words": 0.07317073170731707,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.025625000000000002,
+            "fake": 1
+        },
+        {
+            "text_length": 118,
+            "text_sentences": 8,
+            "text_adj_words": 0.15254237288135594,
+            "text_verbs_words": 0.11864406779661017,
+            "text_modal_verbs": 0.00847457627118644,
+            "sentiment": 0.21851250000000005,
+            "fake": 1
+        },
+        {
+            "text_length": 166,
+            "text_sentences": 12,
+            "text_adj_words": 0.09036144578313253,
+            "text_verbs_words": 0.08433734939759036,
+            "text_modal_verbs": 0.006024096385542169,
+            "sentiment": -0.079175,
+            "fake": 1
+        },
+        {
+            "text_length": 210,
+            "text_sentences": 18,
+            "text_adj_words": 0.18095238095238095,
+            "text_verbs_words": 0.09523809523809523,
+            "text_modal_verbs": 0.004761904761904762,
+            "sentiment": 0.3472333333333334,
+            "fake": 1
+        },
+        {
+            "text_length": 124,
+            "text_sentences": 16,
+            "text_adj_words": 0.1532258064516129,
+            "text_verbs_words": 0.1693548387096774,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.04021874999999999,
+            "fake": 1
+        },
+        {
+            "text_length": 127,
+            "text_sentences": 11,
+            "text_adj_words": 0.14173228346456693,
+            "text_verbs_words": 0.13385826771653545,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.17910909090909088,
+            "fake": 1
+        },
+        {
+            "text_length": 185,
+            "text_sentences": 19,
+            "text_adj_words": 0.11891891891891893,
+            "text_verbs_words": 0.14054054054054055,
+            "text_modal_verbs": 0.010810810810810811,
+            "sentiment": -0.11818947368421051,
+            "fake": 1
+        },
+        {
+            "text_length": 365,
+            "text_sentences": 29,
+            "text_adj_words": 0.13150684931506848,
+            "text_verbs_words": 0.11506849315068493,
+            "text_modal_verbs": 0.0027397260273972603,
+            "sentiment": -0.04069655172413793,
+            "fake": 1
+        },
+        {
+            "text_length": 114,
+            "text_sentences": 7,
+            "text_adj_words": 0.13157894736842105,
+            "text_verbs_words": 0.12280701754385964,
+            "text_modal_verbs": 0.008771929824561403,
+            "sentiment": -0.16515714285714284,
+            "fake": 1
+        },
+        {
+            "text_length": 85,
+            "text_sentences": 9,
+            "text_adj_words": 0.1411764705882353,
+            "text_verbs_words": 0.16470588235294117,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.1516222222222222,
+            "fake": 1
+        },
+        {
+            "text_length": 80,
+            "text_sentences": 3,
+            "text_adj_words": 0.1125,
+            "text_verbs_words": 0.1125,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.5138666666666666,
+            "fake": 1
+        },
+        {
+            "text_length": 116,
+            "text_sentences": 11,
+            "text_adj_words": 0.1896551724137931,
+            "text_verbs_words": 0.16379310344827586,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.2682818181818182,
+            "fake": 1
+        },
+        {
+            "text_length": 366,
+            "text_sentences": 36,
+            "text_adj_words": 0.18579234972677597,
+            "text_verbs_words": 0.11475409836065574,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.12304444444444444,
+            "fake": 1
+        },
+        {
+            "text_length": 124,
+            "text_sentences": 11,
+            "text_adj_words": 0.21774193548387097,
+            "text_verbs_words": 0.08064516129032258,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.1879818181818182,
+            "fake": 1
+        },
+        {
+            "text_length": 242,
+            "text_sentences": 13,
+            "text_adj_words": 0.17355371900826447,
+            "text_verbs_words": 0.10743801652892562,
+            "text_modal_verbs": 0.004132231404958678,
+            "sentiment": -0.03286923076923076,
+            "fake": 1
+        },
+        {
+            "text_length": 259,
+            "text_sentences": 20,
+            "text_adj_words": 0.16988416988416988,
+            "text_verbs_words": 0.13513513513513514,
+            "text_modal_verbs": 0.003861003861003861,
+            "sentiment": 0.184965,
+            "fake": 1
+        },
+        {
+            "text_length": 80,
+            "text_sentences": 5,
+            "text_adj_words": 0.1125,
+            "text_verbs_words": 0.1,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.03744000000000001,
+            "fake": 1
+        },
+        {
+            "text_length": 191,
+            "text_sentences": 13,
+            "text_adj_words": 0.1518324607329843,
+            "text_verbs_words": 0.14659685863874344,
+            "text_modal_verbs": 0.010471204188481676,
+            "sentiment": -0.2390307692307692,
+            "fake": 1
+        },
+        {
+            "text_length": 140,
+            "text_sentences": 10,
+            "text_adj_words": 0.18571428571428572,
+            "text_verbs_words": 0.12142857142857143,
+            "text_modal_verbs": 0.007142857142857143,
+            "sentiment": -0.11722999999999999,
+            "fake": 1
+        },
+        {
+            "text_length": 96,
+            "text_sentences": 5,
+            "text_adj_words": 0.16666666666666666,
+            "text_verbs_words": 0.16666666666666666,
+            "text_modal_verbs": 0.020833333333333332,
+            "sentiment": -0.42262000000000005,
+            "fake": 1
+        },
+        {
+            "text_length": 192,
+            "text_sentences": 15,
+            "text_adj_words": 0.171875,
+            "text_verbs_words": 0.13020833333333334,
+            "text_modal_verbs": 0.005208333333333333,
+            "sentiment": 0.018039999999999994,
+            "fake": 1
+        },
+        {
+            "text_length": 202,
+            "text_sentences": 29,
+            "text_adj_words": 0.13861386138613863,
+            "text_verbs_words": 0.19306930693069307,
+            "text_modal_verbs": 0.009900990099009901,
+            "sentiment": 0.0899206896551724,
+            "fake": 1
+        },
+        {
+            "text_length": 73,
+            "text_sentences": 8,
+            "text_adj_words": 0.1780821917808219,
+            "text_verbs_words": 0.1095890410958904,
+            "text_modal_verbs": 0.0136986301369863,
+            "sentiment": 0.16477499999999998,
+            "fake": 1
+        },
+        {
+            "text_length": 426,
+            "text_sentences": 80,
+            "text_adj_words": 0.1056338028169014,
+            "text_verbs_words": 0.18544600938967137,
+            "text_modal_verbs": 0.002347417840375587,
+            "sentiment": -0.19866749999999994,
+            "fake": 1
+        },
+        {
+            "text_length": 282,
+            "text_sentences": 19,
+            "text_adj_words": 0.07801418439716312,
+            "text_verbs_words": 0.07801418439716312,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.07348947368421052,
+            "fake": 1
+        },
+        {
+            "text_length": 59,
+            "text_sentences": 6,
+            "text_adj_words": 0.15254237288135594,
+            "text_verbs_words": 0.0847457627118644,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.021366666666666662,
+            "fake": 1
+        },
+        {
+            "text_length": 201,
+            "text_sentences": 15,
+            "text_adj_words": 0.1791044776119403,
+            "text_verbs_words": 0.08955223880597014,
+            "text_modal_verbs": 0.004975124378109453,
+            "sentiment": -0.0003599999999999937,
+            "fake": 1
+        },
+        {
+            "text_length": 237,
+            "text_sentences": 17,
+            "text_adj_words": 0.18143459915611815,
+            "text_verbs_words": 0.1308016877637131,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.0216764705882353,
+            "fake": 1
+        },
+        {
+            "text_length": 162,
+            "text_sentences": 13,
+            "text_adj_words": 0.20987654320987653,
+            "text_verbs_words": 0.10493827160493827,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.025276923076923082,
+            "fake": 1
+        },
+        {
+            "text_length": 66,
+            "text_sentences": 4,
+            "text_adj_words": 0.10606060606060606,
+            "text_verbs_words": 0.07575757575757576,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.17782499999999998,
+            "fake": 1
+        },
+        {
+            "text_length": 134,
+            "text_sentences": 14,
+            "text_adj_words": 0.1791044776119403,
+            "text_verbs_words": 0.1865671641791045,
+            "text_modal_verbs": 0.022388059701492536,
+            "sentiment": -0.20184285714285713,
+            "fake": 1
+        },
+        {
+            "text_length": 108,
+            "text_sentences": 9,
+            "text_adj_words": 0.18518518518518517,
+            "text_verbs_words": 0.19444444444444445,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.15004444444444445,
+            "fake": 1
+        },
+        {
+            "text_length": 84,
+            "text_sentences": 8,
+            "text_adj_words": 0.14285714285714285,
+            "text_verbs_words": 0.14285714285714285,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.15451250000000002,
+            "fake": 1
+        },
+        {
+            "text_length": 109,
+            "text_sentences": 8,
+            "text_adj_words": 0.12844036697247707,
+            "text_verbs_words": 0.1834862385321101,
+            "text_modal_verbs": 0.027522935779816515,
+            "sentiment": 0.30803749999999996,
+            "fake": 1
+        },
+        {
+            "text_length": 80,
+            "text_sentences": 5,
+            "text_adj_words": 0.1375,
+            "text_verbs_words": 0.1875,
+            "text_modal_verbs": 0.025,
+            "sentiment": 0.32888,
+            "fake": 1
+        },
+        {
+            "text_length": 68,
+            "text_sentences": 5,
+            "text_adj_words": 0.1323529411764706,
+            "text_verbs_words": 0.17647058823529413,
+            "text_modal_verbs": 0.014705882352941176,
+            "sentiment": -0.37024,
+            "fake": 1
+        },
+        {
+            "text_length": 100,
+            "text_sentences": 6,
+            "text_adj_words": 0.18,
+            "text_verbs_words": 0.13,
+            "text_modal_verbs": 0.03,
+            "sentiment": 0.14103333333333337,
+            "fake": 1
+        },
+        {
+            "text_length": 147,
+            "text_sentences": 23,
+            "text_adj_words": 0.1836734693877551,
+            "text_verbs_words": 0.14965986394557823,
+            "text_modal_verbs": 0.013605442176870748,
+            "sentiment": 0.13289130434782606,
+            "fake": 1
+        },
+        {
+            "text_length": 53,
+            "text_sentences": 5,
+            "text_adj_words": 0.1509433962264151,
+            "text_verbs_words": 0.18867924528301888,
+            "text_modal_verbs": 0.018867924528301886,
+            "sentiment": -0.03802,
+            "fake": 1
+        },
+        {
+            "text_length": 58,
+            "text_sentences": 5,
+            "text_adj_words": 0.20689655172413793,
+            "text_verbs_words": 0.15517241379310345,
+            "text_modal_verbs": 0.034482758620689655,
+            "sentiment": -0.25325999999999993,
+            "fake": 1
+        },
+        {
+            "text_length": 213,
+            "text_sentences": 21,
+            "text_adj_words": 0.20187793427230047,
+            "text_verbs_words": 0.09859154929577464,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.02548571428571428,
+            "fake": 1
+        },
+        {
+            "text_length": 105,
+            "text_sentences": 4,
+            "text_adj_words": 0.17142857142857143,
+            "text_verbs_words": 0.10476190476190476,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.18682499999999996,
+            "fake": 1
+        },
+        {
+            "text_length": 45,
+            "text_sentences": 3,
+            "text_adj_words": 0.15555555555555556,
+            "text_verbs_words": 0.1111111111111111,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.12893333333333334,
+            "fake": 1
+        },
+        {
+            "text_length": 193,
+            "text_sentences": 14,
+            "text_adj_words": 0.16062176165803108,
+            "text_verbs_words": 0.10362694300518134,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.17588571428571428,
+            "fake": 1
+        },
+        {
+            "text_length": 65,
+            "text_sentences": 5,
+            "text_adj_words": 0.13846153846153847,
+            "text_verbs_words": 0.16923076923076924,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.5885400000000001,
+            "fake": 1
+        },
+        {
+            "text_length": 82,
+            "text_sentences": 6,
+            "text_adj_words": 0.1951219512195122,
+            "text_verbs_words": 0.15853658536585366,
+            "text_modal_verbs": 0.012195121951219513,
+            "sentiment": -0.34959999999999997,
+            "fake": 1
+        },
+        {
+            "text_length": 95,
+            "text_sentences": 8,
+            "text_adj_words": 0.14736842105263157,
+            "text_verbs_words": 0.1368421052631579,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.2860125,
+            "fake": 1
+        },
+        {
+            "text_length": 101,
+            "text_sentences": 6,
+            "text_adj_words": 0.06930693069306931,
+            "text_verbs_words": 0.09900990099009901,
+            "text_modal_verbs": 0.009900990099009901,
+            "sentiment": -0.16661666666666666,
+            "fake": 0
+        },
+        {
+            "text_length": 355,
+            "text_sentences": 25,
+            "text_adj_words": 0.15211267605633802,
+            "text_verbs_words": 0.14647887323943662,
+            "text_modal_verbs": 0.005633802816901409,
+            "sentiment": 0.07308399999999998,
+            "fake": 0
+        },
+        {
+            "text_length": 344,
+            "text_sentences": 23,
+            "text_adj_words": 0.12790697674418605,
+            "text_verbs_words": 0.11337209302325581,
+            "text_modal_verbs": 0.005813953488372093,
+            "sentiment": 0.09194782608695651,
+            "fake": 0
+        },
+        {
+            "text_length": 216,
+            "text_sentences": 13,
+            "text_adj_words": 0.10185185185185185,
+            "text_verbs_words": 0.1111111111111111,
+            "text_modal_verbs": 0.013888888888888888,
+            "sentiment": -0.33706153846153847,
+            "fake": 0
+        },
+        {
+            "text_length": 252,
+            "text_sentences": 12,
+            "text_adj_words": 0.1746031746031746,
+            "text_verbs_words": 0.10714285714285714,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.3136166666666667,
+            "fake": 0
+        },
+        {
+            "text_length": 81,
+            "text_sentences": 6,
+            "text_adj_words": 0.18518518518518517,
+            "text_verbs_words": 0.07407407407407407,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.02591666666666666,
+            "fake": 0
+        },
+        {
+            "text_length": 204,
+            "text_sentences": 26,
+            "text_adj_words": 0.15196078431372548,
+            "text_verbs_words": 0.16176470588235295,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.22449999999999998,
+            "fake": 0
+        },
+        {
+            "text_length": 155,
+            "text_sentences": 9,
+            "text_adj_words": 0.16129032258064516,
+            "text_verbs_words": 0.0967741935483871,
+            "text_modal_verbs": 0.0064516129032258064,
+            "sentiment": 0.23733333333333334,
+            "fake": 0
+        },
+        {
+            "text_length": 78,
+            "text_sentences": 8,
+            "text_adj_words": 0.14102564102564102,
+            "text_verbs_words": 0.11538461538461539,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.3555125,
+            "fake": 0
+        },
+        {
+            "text_length": 159,
+            "text_sentences": 13,
+            "text_adj_words": 0.1320754716981132,
+            "text_verbs_words": 0.13836477987421383,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.06164615384615382,
+            "fake": 0
+        },
+        {
+            "text_length": 310,
+            "text_sentences": 20,
+            "text_adj_words": 0.2161290322580645,
+            "text_verbs_words": 0.0967741935483871,
+            "text_modal_verbs": 0.0064516129032258064,
+            "sentiment": 0.20863499999999996,
+            "fake": 0
+        },
+        {
+            "text_length": 197,
+            "text_sentences": 12,
+            "text_adj_words": 0.12690355329949238,
+            "text_verbs_words": 0.07106598984771574,
+            "text_modal_verbs": 0.005076142131979695,
+            "sentiment": -0.08029166666666666,
+            "fake": 0
+        },
+        {
+            "text_length": 108,
+            "text_sentences": 7,
+            "text_adj_words": 0.1111111111111111,
+            "text_verbs_words": 0.07407407407407407,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.10921428571428571,
+            "fake": 0
+        },
+        {
+            "text_length": 199,
+            "text_sentences": 13,
+            "text_adj_words": 0.135678391959799,
+            "text_verbs_words": 0.1306532663316583,
+            "text_modal_verbs": 0.005025125628140704,
+            "sentiment": -0.37178461538461544,
+            "fake": 0
+        },
+        {
+            "text_length": 100,
+            "text_sentences": 6,
+            "text_adj_words": 0.12,
+            "text_verbs_words": 0.1,
+            "text_modal_verbs": 0.01,
+            "sentiment": 0.1426,
+            "fake": 0
+        },
+        {
+            "text_length": 246,
+            "text_sentences": 18,
+            "text_adj_words": 0.17073170731707318,
+            "text_verbs_words": 0.13414634146341464,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.2694166666666667,
+            "fake": 0
+        },
+        {
+            "text_length": 226,
+            "text_sentences": 13,
+            "text_adj_words": 0.09734513274336283,
+            "text_verbs_words": 0.0752212389380531,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.24020769230769232,
+            "fake": 0
+        },
+        {
+            "text_length": 203,
+            "text_sentences": 17,
+            "text_adj_words": 0.21674876847290642,
+            "text_verbs_words": 0.10837438423645321,
+            "text_modal_verbs": 0.0049261083743842365,
+            "sentiment": 0.22348823529411768,
+            "fake": 0
+        },
+        {
+            "text_length": 240,
+            "text_sentences": 13,
+            "text_adj_words": 0.19166666666666668,
+            "text_verbs_words": 0.07916666666666666,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.15937692307692305,
+            "fake": 0
+        },
+        {
+            "text_length": 96,
+            "text_sentences": 5,
+            "text_adj_words": 0.16666666666666666,
+            "text_verbs_words": 0.16666666666666666,
+            "text_modal_verbs": 0.020833333333333332,
+            "sentiment": -0.42262000000000005,
+            "fake": 0
+        },
+        {
+            "text_length": 51,
+            "text_sentences": 5,
+            "text_adj_words": 0.13725490196078433,
+            "text_verbs_words": 0.058823529411764705,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.20972,
+            "fake": 0
+        },
+        {
+            "text_length": 164,
+            "text_sentences": 10,
+            "text_adj_words": 0.15853658536585366,
+            "text_verbs_words": 0.13414634146341464,
+            "text_modal_verbs": 0.03048780487804878,
+            "sentiment": 0.021140000000000003,
+            "fake": 0
+        },
+        {
+            "text_length": 262,
+            "text_sentences": 27,
+            "text_adj_words": 0.20229007633587787,
+            "text_verbs_words": 0.11068702290076336,
+            "text_modal_verbs": 0.003816793893129771,
+            "sentiment": 0.24472962962962963,
+            "fake": 0
+        },
+        {
+            "text_length": 167,
+            "text_sentences": 19,
+            "text_adj_words": 0.2155688622754491,
+            "text_verbs_words": 0.08383233532934131,
+            "text_modal_verbs": 0.011976047904191617,
+            "sentiment": 0.07901052631578946,
+            "fake": 0
+        },
+        {
+            "text_length": 130,
+            "text_sentences": 7,
+            "text_adj_words": 0.18461538461538463,
+            "text_verbs_words": 0.13846153846153847,
+            "text_modal_verbs": 0.007692307692307693,
+            "sentiment": 0.1485857142857143,
+            "fake": 0
+        },
+        {
+            "text_length": 32,
+            "text_sentences": 2,
+            "text_adj_words": 0.125,
+            "text_verbs_words": 0.09375,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.31245,
+            "fake": 0
+        },
+        {
+            "text_length": 100,
+            "text_sentences": 5,
+            "text_adj_words": 0.14,
+            "text_verbs_words": 0.13,
+            "text_modal_verbs": 0.02,
+            "sentiment": 0.0578,
+            "fake": 0
+        },
+        {
+            "text_length": 217,
+            "text_sentences": 13,
+            "text_adj_words": 0.14285714285714285,
+            "text_verbs_words": 0.11981566820276497,
+            "text_modal_verbs": 0.02304147465437788,
+            "sentiment": 0.15636923076923076,
+            "fake": 0
+        },
+        {
+            "text_length": 121,
+            "text_sentences": 6,
+            "text_adj_words": 0.08264462809917356,
+            "text_verbs_words": 0.09090909090909091,
+            "text_modal_verbs": 0.0,
+            "sentiment": 0.14543333333333333,
+            "fake": 0
+        },
+        {
+            "text_length": 349,
+            "text_sentences": 18,
+            "text_adj_words": 0.15759312320916904,
+            "text_verbs_words": 0.1346704871060172,
+            "text_modal_verbs": 0.011461318051575931,
+            "sentiment": 0.31651111111111113,
+            "fake": 0
+        },
+        {
+            "text_length": 231,
+            "text_sentences": 17,
+            "text_adj_words": 0.12554112554112554,
+            "text_verbs_words": 0.15584415584415584,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.10481176470588235,
+            "fake": 0
+        },
+        {
+            "text_length": 335,
+            "text_sentences": 25,
+            "text_adj_words": 0.17313432835820897,
+            "text_verbs_words": 0.11940298507462686,
+            "text_modal_verbs": 0.0029850746268656717,
+            "sentiment": -0.09279599999999996,
+            "fake": 0
+        },
+        {
+            "text_length": 150,
+            "text_sentences": 10,
+            "text_adj_words": 0.14666666666666667,
+            "text_verbs_words": 0.09333333333333334,
+            "text_modal_verbs": 0.006666666666666667,
+            "sentiment": -0.35209,
+            "fake": 0
+        },
+        {
+            "text_length": 258,
+            "text_sentences": 12,
+            "text_adj_words": 0.15503875968992248,
+            "text_verbs_words": 0.16666666666666666,
+            "text_modal_verbs": 0.015503875968992248,
+            "sentiment": 0.007383333333333335,
+            "fake": 0
+        },
+        {
+            "text_length": 284,
+            "text_sentences": 21,
+            "text_adj_words": 0.12323943661971831,
+            "text_verbs_words": 0.06690140845070422,
+            "text_modal_verbs": 0.0035211267605633804,
+            "sentiment": 0.35436190476190477,
+            "fake": 0
+        },
+        {
+            "text_length": 356,
+            "text_sentences": 39,
+            "text_adj_words": 0.1151685393258427,
+            "text_verbs_words": 0.11235955056179775,
+            "text_modal_verbs": 0.02247191011235955,
+            "sentiment": 0.17441538461538458,
+            "fake": 0
+        },
+        {
+            "text_length": 243,
+            "text_sentences": 13,
+            "text_adj_words": 0.1440329218106996,
+            "text_verbs_words": 0.1111111111111111,
+            "text_modal_verbs": 0.01646090534979424,
+            "sentiment": -0.11646153846153845,
+            "fake": 0
+        },
+        {
+            "text_length": 145,
+            "text_sentences": 8,
+            "text_adj_words": 0.14482758620689656,
+            "text_verbs_words": 0.1310344827586207,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.3021375,
+            "fake": 0
+        },
+        {
+            "text_length": 198,
+            "text_sentences": 14,
+            "text_adj_words": 0.17676767676767677,
+            "text_verbs_words": 0.10606060606060606,
+            "text_modal_verbs": 0.005050505050505051,
+            "sentiment": -0.03872857142857143,
+            "fake": 0
+        },
+        {
+            "text_length": 116,
+            "text_sentences": 8,
+            "text_adj_words": 0.09482758620689655,
+            "text_verbs_words": 0.07758620689655173,
+            "text_modal_verbs": 0.02586206896551724,
+            "sentiment": 0.2886,
+            "fake": 0
+        },
+        {
+            "text_length": 76,
+            "text_sentences": 4,
+            "text_adj_words": 0.10526315789473684,
+            "text_verbs_words": 0.09210526315789473,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.35867499999999997,
+            "fake": 0
+        },
+        {
+            "text_length": 83,
+            "text_sentences": 6,
+            "text_adj_words": 0.04819277108433735,
+            "text_verbs_words": 0.060240963855421686,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.24919999999999998,
+            "fake": 0
+        },
+        {
+            "text_length": 299,
+            "text_sentences": 19,
+            "text_adj_words": 0.1806020066889632,
+            "text_verbs_words": 0.08361204013377926,
+            "text_modal_verbs": 0.0033444816053511705,
+            "sentiment": -0.22924736842105267,
+            "fake": 0
+        },
+        {
+            "text_length": 318,
+            "text_sentences": 21,
+            "text_adj_words": 0.1761006289308176,
+            "text_verbs_words": 0.1509433962264151,
+            "text_modal_verbs": 0.006289308176100629,
+            "sentiment": 0.04003809523809523,
+            "fake": 0
+        },
+        {
+            "text_length": 401,
+            "text_sentences": 52,
+            "text_adj_words": 0.14214463840399003,
+            "text_verbs_words": 0.14214463840399003,
+            "text_modal_verbs": 0.0,
+            "sentiment": -0.1543576923076923,
+            "fake": 0
         }
     ]
 }
