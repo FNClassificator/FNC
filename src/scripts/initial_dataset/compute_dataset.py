@@ -8,8 +8,8 @@ def compute_all():
     # 1. Get dataset
     dataset = dataframe.modelate_dataset()
     # 2. Clean title and extract features
-    #ef.get_title_info(dataset)
-    #ef.get_similarity_info(dataset)
+    ef.get_title_info(dataset)
+    ef.get_similarity_info(dataset)
     ef.get_text_info(dataset)
 
 if __name__ == '__main__':
