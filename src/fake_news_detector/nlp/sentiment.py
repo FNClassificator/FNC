@@ -48,7 +48,7 @@ def get_sentiment_by_phrases(text):
     result = []
     for sentence in sentences:
         vs = analyzer.polarity_scores(sentence)
-        print(vs)
+        #print(vs)
         # neg_scores.append(analyzer.polarity_scores(sentence)['neg'])
         # pos_scores.append(analyzer.polarity_scores(sentence)['pos'])
         compound = analyzer.polarity_scores(sentence)['compound']

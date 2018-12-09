@@ -1,9 +1,28 @@
 import pandas as pd
 import json
-
+from src.fake_news_detector.read_data import dataframe
+from src.fake_news_detector.nlp import clean_text
+from src.utils import io
 from src.utils import log
 
 # File that include function to manage pandas dataframe
+
+def modelate_dataset():
+	articles = {
+		'articles' : []
+	}
+	n_ini = 1
+	n_fi = 116
+	for x in range(n_ini,n_fi):
+		path =  'src/data/articles_en/Article_' + str(x) + '.json'
+		# Read file
+		content = io.read_json_file(path)
+		if content != None:
+			articles['articles'].append(content)
+	# Create dataframe
+	return dataframe.get_dataframe_from_json(articles)
+
+
 
 # Pre:  JSON content
 # Post: Pandas dataframe with content input 

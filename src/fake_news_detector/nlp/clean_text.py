@@ -1,4 +1,4 @@
-from src.fake_news_detector.helpers.nlp import tokenize as tk
+from src.fake_news_detector.nlp import tokenize as tk
 
 
 """ 
