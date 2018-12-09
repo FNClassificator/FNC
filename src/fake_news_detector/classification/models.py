@@ -35,3 +35,6 @@ class ClassificationModel():
     def predict_all(self,X):
         y = self.model.predict(X)
         return y
+
+    def score(self, X, y):
+        return self.model.score(X,y)
