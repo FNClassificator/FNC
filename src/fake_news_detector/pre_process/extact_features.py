@@ -126,5 +126,5 @@ def get_text_info(dataset):
             sentiment_sum += sent.get_sentiment_by_phrases(sentence)
         dict_t['sentiment'] = sentiment_sum / len(all_sentences)
         dataset_all['articles'].append(dict_t)
-    io.write_json_file('src/data/dataset_title.json', dataset_all)
+    io.write_json_file('src/data/dataset_text.json', dataset_all)
     return dataset_all
