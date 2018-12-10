@@ -9,3 +9,4 @@ requests
 autopep8
 vaderSentiment
 matplotlib
+spacy
