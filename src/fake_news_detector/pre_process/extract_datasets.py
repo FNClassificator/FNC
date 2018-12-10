@@ -6,7 +6,7 @@ from src.fake_news_detector.nlp import tokenize as tk
 from src.utils import io
 import itertools
 
-
+# Get dataset about title info
 def get_title_info(dataset):
     dataset_all = {
         'articles': []
