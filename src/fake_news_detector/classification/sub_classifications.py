@@ -62,6 +62,7 @@ def get_text_prediction(df, model_type, output):
             .format(model.score(X_test, y_test)))
     return model.predict_all(X)
 
+
 def get_main_prediction(df, model_type, output):
     X = df[['title','similarity','text']]
     y = df['fake']
