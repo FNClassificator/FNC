@@ -29,6 +29,20 @@ def get_documents_similarities(documents):
     return tf_matrix[0][0]
 
 
+def get_similarity_between_texts(documents):
+    tfidf = TfidfVectorizer().fit_transform(documents)
+    tf_matrix = tfidf * tfidf.T
+    total = 0
+    sum_total = 0
+    for x in range(0,len(documents)):
+        print(tf_matrix[x])
+        for value in tf_matrix[x]:
+            print(value)
+            if value < 1:
+                total += 1
+                sum_total += value
+    return sum_total / total
+
 # With COSINE similarity
 def get_cosine_similarity(text_one, text_two):
     documents = [text_one, text_two]

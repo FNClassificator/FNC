@@ -18,7 +18,7 @@ def n_sentences(sent_tokens):
 def perct_noun_words(tag_tokens):
     total = 0
     for _, tag in tag_tokens:
-        if tag == 'NN':
+        if tag.startswith('N'):
             total += 1
     return total / len(tag_tokens)
 
@@ -82,5 +82,12 @@ def lexical_diversity(word_freq):
     return len(word_freq)
 
 # T Y P E
-
+def pert_diferent_words(text_token):
+    result = []
+    for text in text_token:
+        if text in result:
+            pass
+        else:
+            result.append(text)
+    return len(result)/len(text_token)
 

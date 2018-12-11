@@ -1,1 +1,711 @@
-{"articles": [{"similarity_text_title": 0.0425531914893617, "similarity_text_subtitle": 0.06666666666666667, "similarity_title_subtitle": 0.07368421052631578, "fake": 1}, {"similarity_text_title": 0.042735042735042736, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.07692307692307693, "fake": 1}, {"similarity_text_title": 0.043010752688172046, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.022222222222222223, "fake": 1}, {"similarity_text_title": 0.1, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.04081632653061224, "fake": 1}, {"similarity_text_title": 0.06896551724137931, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.03508771929824561, "fake": 1}, {"similarity_text_title": 0.015625, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.0423728813559322, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.06349206349206349, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.022222222222222223, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.03825136612021858, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.05102040816326531, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.04477611940298507, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.01818181818181818, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.038461538461538464, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.05357142857142857, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.02857142857142857, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.03088803088803089, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.031914893617021274, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.05333333333333334, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.18666666666666668, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.12631578947368421, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.027874564459930314, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.08, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.03940886699507389, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.05291005291005291, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.0547945205479452, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.046875, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.056074766355140186, "similarity_text_subtitle": 0.05, "similarity_title_subtitle": 0.034482758620689655, "fake": 1}, {"similarity_text_title": 0.034482758620689655, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.15294117647058825, "fake": 1}, {"similarity_text_title": 0.04054054054054054, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.013793103448275862, "similarity_text_subtitle": 0.13333333333333333, "similarity_title_subtitle": 0.06944444444444445, "fake": 1}, {"similarity_text_title": 0.07352941176470588, "similarity_text_subtitle": 0.047619047619047616, "similarity_title_subtitle": 0.057971014492753624, "fake": 1}, {"similarity_text_title": 0.011029411764705883, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.02527075812274368, "fake": 1}, {"similarity_text_title": 0.04838709677419355, "similarity_text_subtitle": 0.08695652173913043, "similarity_title_subtitle": 0.047619047619047616, "fake": 1}, {"similarity_text_title": 0.0425531914893617, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.11363636363636363, "fake": 1}, {"similarity_text_title": 0.03821656050955414, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.04938271604938271, "fake": 1}, {"similarity_text_title": 0.036585365853658534, "similarity_text_subtitle": 0.06666666666666667, "similarity_title_subtitle": 0.036585365853658534, "fake": 1}, {"similarity_text_title": 0.03787878787878788, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.04838709677419355, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.07964601769911504, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.03333333333333333, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.013888888888888888, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.05, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.07142857142857142, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.014925373134328358, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.04878048780487805, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.008928571428571428, "similarity_text_subtitle": 0.02631578947368421, "similarity_title_subtitle": 0.05343511450381679, "fake": 1}, {"similarity_text_title": 0.0625, "similarity_text_subtitle": 0.2, "similarity_title_subtitle": 0.14583333333333334, "fake": 1}, {"similarity_text_title": 0.03773584905660377, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.12962962962962962, "fake": 1}, {"similarity_text_title": 0.017857142857142856, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.048484848484848485, "fake": 1}, {"similarity_text_title": 0.03409090909090909, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.021739130434782608, "similarity_text_subtitle": 0.16, "similarity_title_subtitle": 0.0847457627118644, "fake": 1}, {"similarity_text_title": 0.0625, "similarity_text_subtitle": 0.26666666666666666, "similarity_title_subtitle": 0.06201550387596899, "fake": 1}, {"similarity_text_title": 0.11864406779661017, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.08823529411764706, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 1}, {"similarity_text_title": 0.047619047619047616, "similarity_text_subtitle": 0.08333333333333333, "similarity_title_subtitle": 0.07407407407407407, "fake": 1}, {"similarity_text_title": 0.07228915662650602, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.08433734939759036, "fake": 0}, {"similarity_text_title": 0.011673151750972763, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.023166023166023165, "fake": 0}, {"similarity_text_title": 0.0, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.026923076923076925, "fake": 0}, {"similarity_text_title": 0.013157894736842105, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.013245033112582781, "fake": 0}, {"similarity_text_title": 0.043010752688172046, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.016042780748663103, "fake": 0}, {"similarity_text_title": 0.1, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.1016949152542373, "fake": 0}, {"similarity_text_title": 0.01764705882352941, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.011695906432748537, "fake": 0}, {"similarity_text_title": 0.07476635514018691, "similarity_text_subtitle": 0.13333333333333333, "similarity_title_subtitle": 0.06422018348623854, "fake": 0}, {"similarity_text_title": 0.046875, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.06153846153846154, "fake": 0}, {"similarity_text_title": 0.05555555555555555, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 0}, {"similarity_text_title": 0.03431372549019608, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 0}, {"similarity_text_title": 0.044444444444444446, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 0}, {"similarity_text_title": 0.07526881720430108, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 0}, {"similarity_text_title": 0.037037037037037035, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 0}, {"similarity_text_title": 0.10526315789473684, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 0}, {"similarity_text_title": 0.023952095808383235, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.03389830508474576, "fake": 0}, {"similarity_text_title": 0.041379310344827586, "similarity_text_subtitle": 0.09090909090909091, "similarity_title_subtitle": 0.06622516556291391, "fake": 0}, {"similarity_text_title": 0.006369426751592357, "similarity_text_subtitle": 0.05555555555555555, "similarity_title_subtitle": 0.049689440993788817, "fake": 0}, {"similarity_text_title": 0.026041666666666668, "similarity_text_subtitle": 0.08333333333333333, "similarity_title_subtitle": 0.05555555555555555, "fake": 0}, {"similarity_text_title": 0.034482758620689655, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.15294117647058825, "fake": 0}, {"similarity_text_title": 0.06, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.16, "fake": 0}, {"similarity_text_title": 0.03787878787878788, "similarity_text_subtitle": 0.1111111111111111, "similarity_title_subtitle": 0.015503875968992248, "fake": 0}, {"similarity_text_title": 0.023529411764705882, "similarity_text_subtitle": 0.07142857142857142, "similarity_title_subtitle": 0.06470588235294118, "fake": 0}, {"similarity_text_title": 0.0390625, "similarity_text_subtitle": 0.0625, "similarity_title_subtitle": 0.037037037037037035, "fake": 0}, {"similarity_text_title": 0.02608695652173913, "similarity_text_subtitle": 0.13333333333333333, "similarity_title_subtitle": 0.059322033898305086, "fake": 0}, {"similarity_text_title": 0.125, "similarity_text_subtitle": 0.13513513513513514, "similarity_title_subtitle": 0.05084745762711865, "fake": 0}, {"similarity_text_title": 0.08045977011494253, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.1839080459770115, "fake": 0}, {"similarity_text_title": 0.04, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.12418300653594772, "fake": 0}, {"similarity_text_title": 0.0898876404494382, "similarity_text_subtitle": 0.2, "similarity_title_subtitle": 0.14772727272727273, "fake": 0}, {"similarity_text_title": 0.007874015748031496, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.01937984496124031, "fake": 0}, {"similarity_text_title": 0.03409090909090909, "similarity_text_subtitle": 0.047619047619047616, "similarity_title_subtitle": 0.05555555555555555, "fake": 0}, {"similarity_text_title": 0.028, "similarity_text_subtitle": 0.043478260869565216, "similarity_title_subtitle": 0.023166023166023165, "fake": 0}, {"similarity_text_title": 0.03333333333333333, "similarity_text_subtitle": 0.0625, "similarity_title_subtitle": 0.040983606557377046, "fake": 0}, {"similarity_text_title": 0.020833333333333332, "similarity_text_subtitle": 0.09090909090909091, "similarity_title_subtitle": 0.031578947368421054, "fake": 0}, {"similarity_text_title": 0.0273972602739726, "similarity_text_subtitle": 0.08, "similarity_title_subtitle": 0.02145922746781116, "fake": 0}, {"similarity_text_title": 0.04390243902439024, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 0}, {"similarity_text_title": 0.04712041884816754, "similarity_text_subtitle": 0.037037037037037035, "similarity_title_subtitle": 0.035175879396984924, "fake": 0}, {"similarity_text_title": 0.09, "similarity_text_subtitle": 0.5, "similarity_title_subtitle": 0.5, "fake": 0}, {"similarity_text_title": 0.0136986301369863, "similarity_text_subtitle": 0.08695652173913043, "similarity_title_subtitle": 0.07432432432432433, "fake": 0}, {"similarity_text_title": 0.06060606060606061, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.10784313725490197, "fake": 0}, {"similarity_text_title": 0.08695652173913043, "similarity_text_subtitle": 0.3333333333333333, "similarity_title_subtitle": 0.08695652173913043, "fake": 0}, {"similarity_text_title": 0.14925373134328357, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.041666666666666664, "fake": 0}, {"similarity_text_title": 0.013215859030837005, "similarity_text_subtitle": 0.1111111111111111, "similarity_title_subtitle": 0.030837004405286344, "fake": 0}, {"similarity_text_title": 0.008298755186721992, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.02066115702479339, "fake": 0}, {"similarity_text_title": 0.010344827586206896, "similarity_text_subtitle": 0.0, "similarity_title_subtitle": 0.023972602739726026, "fake": 0}]}
+{
+    "articles": [
+        {
+            "sim_title_subtitle": 0.75,
+            "sim_title_text": 0.45652173913043476,
+            "sim_text_subtitle": 0.45652173913043476,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.7142857142857143,
+            "sim_title_text": 0.42857142857142855,
+            "sim_text_subtitle": 0.5510204081632653,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.48,
+            "sim_title_text": 0.46808510638297873,
+            "sim_text_subtitle": 0.3191489361702128,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.4583333333333333,
+            "sim_title_text": 0.4186046511627907,
+            "sim_text_subtitle": 0.38095238095238093,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.5454545454545454,
+            "sim_title_text": 0.3333333333333333,
+            "sim_text_subtitle": 0.3333333333333333,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.36666666666666664,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.37037037037037035,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.5581395348837209,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.39285714285714285,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.3880597014925373,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.3548387096774194,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4117647058823529,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.5102040816326531,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.35185185185185186,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.44680851063829785,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.5263157894736842,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.5555555555555556,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.6,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.373134328358209,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.44,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.52,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.47368421052631576,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4489795918367347,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.42857142857142855,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.5333333333333333,
+            "sim_title_text": 0.4418604651162791,
+            "sim_text_subtitle": 0.5909090909090909,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.5806451612903226,
+            "sim_title_text": 0.4375,
+            "sim_text_subtitle": 0.5833333333333334,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.44,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.6086956521739131,
+            "sim_title_text": 0.32653061224489793,
+            "sim_text_subtitle": 0.42857142857142855,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.6896551724137931,
+            "sim_title_text": 0.5581395348837209,
+            "sim_text_subtitle": 0.5111111111111111,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.5357142857142857,
+            "sim_title_text": 0.2698412698412698,
+            "sim_text_subtitle": 0.36923076923076925,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.7272727272727273,
+            "sim_title_text": 0.36231884057971014,
+            "sim_text_subtitle": 0.463768115942029,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.5217391304347826,
+            "sim_title_text": 0.3333333333333333,
+            "sim_text_subtitle": 0.3958333333333333,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.6129032258064516,
+            "sim_title_text": 0.36065573770491804,
+            "sim_text_subtitle": 0.45901639344262296,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.7241379310344828,
+            "sim_title_text": 0.43859649122807015,
+            "sim_text_subtitle": 0.43859649122807015,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.3333333333333333,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4166666666666667,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4583333333333333,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4418604651162791,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.41304347826086957,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.46511627906976744,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.47619047619047616,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4523809523809524,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4807692307692308,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.5769230769230769,
+            "sim_title_text": 0.44680851063829785,
+            "sim_text_subtitle": 0.3829787234042553,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.7241379310344828,
+            "sim_title_text": 0.5897435897435898,
+            "sim_text_subtitle": 0.6923076923076923,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.5833333333333334,
+            "sim_title_text": 0.3783783783783784,
+            "sim_text_subtitle": 0.6388888888888888,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.4583333333333333,
+            "sim_title_text": 0.2545454545454545,
+            "sim_text_subtitle": 0.38181818181818183,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.5,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.7037037037037037,
+            "sim_title_text": 0.4444444444444444,
+            "sim_text_subtitle": 0.5106382978723404,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.7,
+            "sim_title_text": 0.45454545454545453,
+            "sim_text_subtitle": 0.4727272727272727,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.5111111111111111,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.391304347826087,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.6956521739130435,
+            "sim_title_text": 0.5,
+            "sim_text_subtitle": 0.5135135135135135,
+            "sim_between_parapraphs": null,
+            "fake": true
+        },
+        {
+            "sim_title_subtitle": 0.6538461538461539,
+            "sim_title_text": 0.38461538461538464,
+            "sim_text_subtitle": 0.4423076923076923,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.56,
+            "sim_title_text": 0.24242424242424243,
+            "sim_text_subtitle": 0.3484848484848485,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.46153846153846156,
+            "sim_title_text": 0.208955223880597,
+            "sim_text_subtitle": 0.3582089552238806,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.5,
+            "sim_title_text": 0.25396825396825395,
+            "sim_text_subtitle": 0.2698412698412698,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.3870967741935484,
+            "sim_title_text": 0.4032258064516129,
+            "sim_text_subtitle": 0.2903225806451613,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.6071428571428571,
+            "sim_title_text": 0.5238095238095238,
+            "sim_text_subtitle": 0.5476190476190477,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.4838709677419355,
+            "sim_title_text": 0.5185185185185185,
+            "sim_text_subtitle": 0.3333333333333333,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.6666666666666666,
+            "sim_title_text": 0.35714285714285715,
+            "sim_text_subtitle": 0.35714285714285715,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.4827586206896552,
+            "sim_title_text": 0.46511627906976744,
+            "sim_text_subtitle": 0.5348837209302325,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4727272727272727,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.3064516129032258,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.37037037037037035,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4375,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.41818181818181815,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4489795918367347,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.6785714285714286,
+            "sim_title_text": 0.4444444444444444,
+            "sim_text_subtitle": 0.4,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.5806451612903226,
+            "sim_title_text": 0.30434782608695654,
+            "sim_text_subtitle": 0.4057971014492754,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.5217391304347826,
+            "sim_title_text": 0.25925925925925924,
+            "sim_text_subtitle": 0.3888888888888889,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.5666666666666667,
+            "sim_title_text": 0.3114754098360656,
+            "sim_text_subtitle": 0.45901639344262296,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.5806451612903226,
+            "sim_title_text": 0.4375,
+            "sim_text_subtitle": 0.5833333333333334,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.64,
+            "sim_title_text": 0.475,
+            "sim_text_subtitle": 0.55,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.5416666666666666,
+            "sim_title_text": 0.3548387096774194,
+            "sim_text_subtitle": 0.24193548387096775,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.6,
+            "sim_title_text": 0.23880597014925373,
+            "sim_text_subtitle": 0.3582089552238806,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.6666666666666666,
+            "sim_title_text": 0.29411764705882354,
+            "sim_text_subtitle": 0.36764705882352944,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.64,
+            "sim_title_text": 0.3877551020408163,
+            "sim_text_subtitle": 0.4489795918367347,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.7272727272727273,
+            "sim_title_text": 0.5,
+            "sim_text_subtitle": 0.40476190476190477,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.6129032258064516,
+            "sim_title_text": 0.44680851063829785,
+            "sim_text_subtitle": 0.6170212765957447,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.5,
+            "sim_title_text": 0.37254901960784315,
+            "sim_text_subtitle": 0.5098039215686274,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.7916666666666666,
+            "sim_title_text": 0.41509433962264153,
+            "sim_text_subtitle": 0.39622641509433965,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.72,
+            "sim_title_text": 0.3114754098360656,
+            "sim_text_subtitle": 0.39344262295081966,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.6,
+            "sim_title_text": 0.3333333333333333,
+            "sim_text_subtitle": 0.4666666666666667,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.8333333333333334,
+            "sim_title_text": 0.3333333333333333,
+            "sim_text_subtitle": 0.36507936507936506,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.76,
+            "sim_title_text": 0.3684210526315789,
+            "sim_text_subtitle": 0.40350877192982454,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.7272727272727273,
+            "sim_title_text": 0.29508196721311475,
+            "sim_text_subtitle": 0.32786885245901637,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.6176470588235294,
+            "sim_title_text": 0.4074074074074074,
+            "sim_text_subtitle": 0.5818181818181818,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.373134328358209,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.5833333333333334,
+            "sim_title_text": 0.4067796610169492,
+            "sim_text_subtitle": 0.5333333333333333,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": null,
+            "sim_title_text": 0.4423076923076923,
+            "sim_text_subtitle": null,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.6538461538461539,
+            "sim_title_text": 0.3684210526315789,
+            "sim_text_subtitle": 0.38596491228070173,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.5769230769230769,
+            "sim_title_text": 0.3050847457627119,
+            "sim_text_subtitle": 0.3898305084745763,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.72,
+            "sim_title_text": 0.42,
+            "sim_text_subtitle": 0.42857142857142855,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.7,
+            "sim_title_text": 0.4807692307692308,
+            "sim_text_subtitle": 0.41818181818181815,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.72,
+            "sim_title_text": 0.28125,
+            "sim_text_subtitle": 0.38095238095238093,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.37037037037037035,
+            "sim_title_text": 0.20634920634920634,
+            "sim_text_subtitle": 0.38095238095238093,
+            "sim_between_parapraphs": null,
+            "fake": false
+        },
+        {
+            "sim_title_subtitle": 0.39285714285714285,
+            "sim_title_text": 0.25757575757575757,
+            "sim_text_subtitle": 0.3333333333333333,
+            "sim_between_parapraphs": null,
+            "fake": false
+        }
+    ]
+}

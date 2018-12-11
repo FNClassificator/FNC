@@ -14,9 +14,9 @@ def clean_text_by_sentence(text):
     for sent in sentence_list:
         token_list = tk.tokenize_by_treebank_word(sent)
         token_list = tk.remove_punctuations(token_list)
-        token_list = tk.remove_stopwords(token_list)
+        #token_list = tk.remove_stopwords(token_list)
         token_list = tk.lemma_tokens(token_list)
-        result.append(token_list)
+        result.append(' '.join(token_list))
     return result
 
 
@@ -29,6 +29,6 @@ Do all process
 def clean_text_words(text):
     words_list = tk.tokenize_by_treebank_word(text)
     result = tk.remove_punctuations(words_list)
-    result = tk.remove_stopwords(result)
+    #result = tk.remove_stopwords(result)
     result = tk.lemma_tokens(result)
     return result
