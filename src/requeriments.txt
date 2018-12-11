@@ -11,4 +11,3 @@ vaderSentiment
 matplotlib
 spacy
 gensim
-logging
