@@ -11,3 +11,4 @@ vaderSentiment
 matplotlib
 spacy
 gensim
+seaborn

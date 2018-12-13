@@ -78,10 +78,11 @@ def freq_distribution(text_token):
     filtered_word_freq = dict((word, freq) for word, freq in fdist1.items() if not word.isdigit())
     return filtered_word_freq
 
+
 def lexical_diversity(word_freq):
     return len(word_freq)
 
-# T Y P E
+
 def pert_diferent_words(text_token):
     result = []
     for text in text_token:
@@ -90,4 +91,9 @@ def pert_diferent_words(text_token):
         else:
             result.append(text)
     return len(result)/len(text_token)
+
+
+
+
+
 
