@@ -1,39 +1,26 @@
 
 import nltk
 
-def get_common_nouns(tagged_text):
+# T Y P E S
+
+# N: Nouns
+# C: Conjunctions
+# J: Adjectives
+# V: Verbs
+
+def get_type_words(tagged_text,type):
     total = []
     for word, tag in tagged_text:
-        if tag.startswith('N'):
-            if not tag in total:
-                total.append(word)
+        if tag.startswith(type):
+            total.append(word)
     return total
 
-
-def get_adj_words(tagged_text):
-    total = []
+def get_unique_type_words(tagged_text, type):
+    total = {}
     for word, tag in tagged_text:
-        if tag.startswith('J'):
-            if not tag in total:
-                total.append(word)
-    return total
-
-def get_verb_words(tagged_text):
-    total = []
-    for word, tag in tagged_text:
-        if tag.startswith('V'):
-            if not tag in total:
-                total.append(word)
-    return total
-
-
-def get_conj_words(tagged_text):
-    total = []
-    for word, tag in tagged_text:
-        if tag.startswith('C'):
-            if not tag in total:
-                total.append(word)
-    return total
+        if tag.startswith(type):
+            total[word] = True
+    return list(total.keys())
 
 
 # N O U N   P R H A S E S 

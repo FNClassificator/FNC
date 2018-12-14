@@ -1,12 +1,10 @@
 import spacy
 
+from  src.fake_news_detector.nlp import chunking as c
 # DETECT SUBJECT
 
 def get_subject(text):
-    nlp = spacy.load('en')
-    sent = "I shot an elephant"
-    doc=nlp(sent)
-    sub_toks = [tok for tok in doc if (tok.dep_ == "nsubj") ]
+    tree = c.standford_parse_tree(text)
     return sub_toks
 
 def detect_subject(text):
