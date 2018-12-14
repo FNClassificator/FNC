@@ -1,16 +1,20 @@
-from src.fake_news_detector.pre_process import extact_features as ef
-from src.fake_news_detector.read_data import dataframe
-
+from src.fake_news_detector.pre_process import extract_datasets as ef
+from src.fake_news_detector.pre_process import raw_dataset as rd
+from src.utils import io
 # OBJECTIVE: Classificate by title
  
 
 def compute_all():
     # 1. Get dataset
-    dataset = dataframe.modelate_dataset()
+    dataset = rd.modelate_dataset()
     # 2. Clean title and extract features
-    ef.get_title_info(dataset)
-    ef.get_similarity_info(dataset)
-    ef.get_text_info(dataset)
+
+    #content_dataset = ef.get_content_dataset(dataset)
+    #io.write_json_file('src/data/dataset_content.json', content_dataset)
+    style_dataset = ef.get_style_dataset(dataset)
+    io.write_json_file('src/data/dataset_style.json', style_dataset)
+    #similarity_dataset = ef.get_similarity_dataset(dataset)
+    #io.write_json_file('src/data/dataset_similarity.json', similarity_dataset)
 
 if __name__ == '__main__':
     compute_all()

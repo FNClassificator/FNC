@@ -10,3 +10,5 @@ autopep8
 vaderSentiment
 matplotlib
 spacy
+gensim
+seaborn
