@@ -9,7 +9,6 @@ class TestSubject(unittest.TestCase):
         text = 'My name is Elena'
         result = s.get_subject(text)
         expected = ['My', 'name']
-        print(result)
         self.assertEqual(result,expected)
         return
 

@@ -5,6 +5,7 @@ from src.fake_news_detector.nlp.features import sentiment as sent
 from src.fake_news_detector.nlp.features import words as w
 from src.fake_news_detector.nlp.features import quantity as q
 from src.fake_news_detector.nlp.features import similarity as s
+from src.fake_news_detector.nlp.features import subject as sub
 
 
 from src.utils import io
@@ -12,14 +13,14 @@ import itertools
 
 def get_all_text_tokenized(row):
     # Title
-    title_token_word = ct.clean_text_words(row['title'])
+    title_token_word = ct.clean_text_by_word(row['title'])
     title_token_sent = ct.clean_text_by_sentence(row['title'])
     # Subtitle
     if row['subtitle'] == '':
         subtitle_token_word = []
         subtitle_token_sent = []
     else:
-        subtitle_token_word = ct.clean_text_words(row['subtitle'])
+        subtitle_token_word = ct.clean_text_by_word(row['subtitle'])
         subtitle_token_sent = ct.clean_text_by_sentence(row['subtitle'])
     # Text
     text_token_paragraph_word = []
@@ -28,12 +29,12 @@ def get_all_text_tokenized(row):
         text_token_paragraph_word.append(text_token[0])
     
     joined_text = '-'.join(row['text'])
-    text_token_word = ct.clean_text_words(joined_text)
+    text_token_word = ct.clean_text_by_word(joined_text)
     text_token_sent = ct.clean_text_by_sentence(joined_text)
 
     # Title + Subtitle + Text
     all_text = row['title'] + ' ' + row['subtitle'] + ' ' + joined_text
-    all_token_word = ct.clean_text_words(all_text)
+    all_token_word = ct.clean_text_by_word(all_text)
     all_token_sent = ct.clean_text_by_sentence(all_text)
 
     tokendata = {
@@ -96,10 +97,11 @@ def get_content_dataset(dataset):
         dict_t['negative_words'] = sentiments[1]
 
         tagged_words = q.get_tags(tokendata['all']['word'])
-        dict_t['common_noun_words'] = w.get_common_nouns(tagged_words)
-        dict_t['adjective_words'] = w.get_adj_words(tagged_words)
-        dict_t['conjunction_words'] = w.get_conj_words(tagged_words)
+        dict_t['common_noun_words'] = w.get_unique_type_words(tagged_words,'N')
+        dict_t['adjective_words'] = w.get_unique_type_words(tagged_words,'J')
+        dict_t['conjunction_words'] = w.get_unique_type_words(tagged_words, 'C')
         dict_t['noun_phrases_words'] = w.get_noun_phrases(tagged_words)
+        
     
         # About title
         sentiments = sent.get_words_by_sentiment(tokendata['title']['word'])
@@ -107,10 +109,11 @@ def get_content_dataset(dataset):
         dict_t['title_negative_words'] = sentiments[1]
 
         tagged_words = q.get_tags(tokendata['title']['word'])
-        dict_t['title_common_noun_words'] = w.get_common_nouns(tagged_words)
-        dict_t['title_adjective_words'] = w.get_adj_words(tagged_words)
-        dict_t['title_conjunction_words'] = w.get_conj_words(tagged_words)
+        dict_t['title_common_noun_words'] = w.get_unique_type_words(tagged_words, 'N')
+        dict_t['title_adjective_words'] = w.get_unique_type_words(tagged_words, 'J')
+        dict_t['title_conjunction_words'] = w.get_unique_type_words(tagged_words, 'C')
         dict_t['title_noun_phrases_words'] = w.get_noun_phrases(tagged_words)
+        dict_t['title_subject'] = sub.get_subjects(tokendata['title']['sent'])
         dict_t['fake'] = row['fake']
         content_dataset['articles'].append(dict_t)
     return content_dataset

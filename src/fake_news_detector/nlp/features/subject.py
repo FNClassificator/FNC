@@ -1,44 +1,57 @@
 import spacy
-
+import nltk
 from  src.fake_news_detector.nlp import chunking as c
+from  src.fake_news_detector.nlp.features import quantity as q
 # DETECT SUBJECT
+
 
 def get_subject(text):
     tree = c.standford_parse_tree(text)
-    return sub_toks
+
+    subject = None
+    for elem in tree[0]:
+        if elem.label() == 'NP':
+            subject = elem
+
+    if subject == None:
+        return []
+    result = []
+    for word in subject.leaves():
+        result.append(word)
+    return result
+
+def get_subjects(sentences):
+    result = []
+    for sent in sentences:
+        result += get_subject(sent)
+    return result
 
 def detect_subject(text):
-    sub_tokens = get_subject(text)
-    # 1. No tiene sujeto
-    if sub_tokens == []:
+    # No tiene sujecto
+    subject = get_subject(text)
+    if subject == []:
         return True
-
     # 3. Usa It
-    if 'it' in sub_tokens:
+    if 'it' in subject:
         return True
-    # 4. Passive voice (no es impersonal pero suele generalizar)
-
     # 5. Usa ONE or You
-    if 'one' in sub_tokens:
+    if 'one' in subject:
         return True
-    if 'you' in sub_tokens:
+    if 'you' in subject:
         return True
-    return
+    if pert_self_reference(subject):
+        return True
+    if q.perct_verb_words(subject) > 0 and len(subject) < 3:
+        return True
+    if len(subject) < 2:
+        return True
+    return False
 
 
 # OTHER SUBJECT PROPERTIES
-
-def pert_passive_voice(text_tokens):
-    return
-
-def pert_retorical_questions(text_tokens):
-    return
-
-def pert_self_reference(text_tokens):
-    return
-
-def pert_group_reference(text_tokens):
-    return
-
-def perct_other_reference(text_tokens):
-    return
+def pert_self_reference(subject):
+    list = ['this', 'I']
+    for item in list:
+        if item in subject:
+            return True
+    return False

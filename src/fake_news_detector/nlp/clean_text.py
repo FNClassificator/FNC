@@ -19,13 +19,14 @@ def clean_text_by_sentence(text):
         token_list = tk.lemma_tokens(token_list)
 
         # Lower case first word
-        word = list(token_list[0])
-        word[0] = word[0].lower()   
-        word = ''.join(word)
-        token_list[0] = word
-        # Join all in one
-        clean_text = ' '.join(token_list)
-        result.append(clean_text)
+        if token_list:
+            word = list(token_list[0])
+            word[0] = word[0].lower()   
+            word = ''.join(word)
+            token_list[0] = word
+            # Join all in one
+            clean_text = ' '.join(token_list)
+            result.append(clean_text)
     return result
 
 
