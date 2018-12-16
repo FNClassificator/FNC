@@ -158,7 +158,6 @@ def get_style_dataset(dataset):
             'mean_words_per_sentence': None,
             'mean_character_per_word': None,
             'mean_noun_phrases': None,
-            #'redundancy': None,
             'title_sentiment': None,
             'title_n_words': None,
             'title_pert_total_conj_prep': None,

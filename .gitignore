@@ -108,4 +108,7 @@ venv.bak/
 
 src/__init__.py
 
-src/models/
+models/
+src/data/articles/
+src/data/articles_en/
+

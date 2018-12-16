@@ -14,9 +14,9 @@ def split_dataset(X, y):
     return X_train, X_test, y_train, y_test
 
 
-def get_title_prediction(df, model_type, output):
-    X = df[['sentiment','title_adj_words','title_verbs_words']]
+def get_prediction(df, model_type,list_t, output):
     y = df['fake']
+    X = df[list_t]
     X_train, X_test, y_train, y_test = split_dataset(X, y)
 
     model = ClassificationModel(model_type)
