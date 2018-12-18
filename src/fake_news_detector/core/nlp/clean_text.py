@@ -10,13 +10,15 @@ Do all process
 5. Fold sentence
 6. Lemmatize tokens
 """
-def clean_text_by_sentence(text):
+def clean_text_by_sentence(text, stopwords):
     sentence_list = tk.tokenize_by_sentences(text)
     result = []
     for sent in sentence_list:
         token_list = tk.tokenize_by_treebank_word(sent)
         token_list = tk.remove_punctuations(token_list)
         token_list = tk.lemma_tokens(token_list)
+        if stopwords:
+            token_list = tk.remove_stopwords(token_list)
 
         # Lower case first word
         if token_list:
@@ -35,9 +37,9 @@ Do all process
 1. tokenize by sentence
 2. tokenize in words each sentence
 """
-def clean_text_by_word(text):
+def clean_text_by_word(text, stopwords):
     result = []
-    sentences = clean_text_by_sentence(text)
+    sentences = clean_text_by_sentence(text, stopwords)
     for sentence in sentences:
         words_list = tk.tokenize_by_treebank_word(sentence)
         result += words_list
