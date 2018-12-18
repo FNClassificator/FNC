@@ -14,32 +14,27 @@ def run():
 
 
     #2. Clean data
-    corpus = []
+    df['corpus'] = df['title']
     i = 0
-
     for _, row in df.iterrows():
-        x = ct.clean_text_by_word(row['title'])
-        y = ct.clean_text_by_word(row['subtitle'])
+        x = ct.clean_text_by_word(row['title'], True)
+        y = ct.clean_text_by_word(row['subtitle'], True)
         z = []
         for sent in row['text']:
-            z += ct.clean_text_by_word(sent)
-        res = x + y + z
-        corpus.append(res)
+            z += ct.clean_text_by_word(sent, True)
+        row['corpus'].replace(x + y + z)
         i = i + 1
 
-    vector_id = []
-    for i in range(0,len(corpus)):
-        vector_id.append(i)
 
     #3. Split data
-    X_train, X_test = train_test_split(vector_id, random_state=0)
+    X_train, X_test = train_test_split(df, random_state=0)
     print(X_train)
     print(X_test)
 
     #4. Tag each doc
     tagged_data = []
     for i in vector_id:
-        tagged_data.append(TaggedDocument(corpus[i],str(i)))
+        tagged_data.append(TaggedDocument(corpus[i],str(df['fake'][i])))
 
     #3. Doc2Vec Model + build vocab
     max_epochs = 100
@@ -63,7 +58,7 @@ def run():
         model.min_alpha = model.alpha
 
     # 5. Test
-    similar_doc = model.docvecs.most_similar(1) 
+        
     print(similar_doc)
     i = similar_doc[0][0]
     print(i)
