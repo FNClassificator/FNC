@@ -6,12 +6,6 @@ from sklearn.model_selection import train_test_split
 import multiprocessing
 import random
 
-def get_corpus(data):
-    documents = []
-    for _, row in data.iterrows():
-        tagged_doc = gensim.models.doc2vec.TaggedDocument(row['corpus'], [row['id']])
-        documents.append(tagged_doc)
-    return documents
 
 ## TOPIC MODELING
 
@@ -27,15 +21,15 @@ cores = multiprocessing.cpu_count()
 
 class Doc2VecModels():
 
-    def __init__(self, data):
-        self.documents = get_corpus(data)
+    def __init__(self, data, tagged_documents):
+        self.documents = tagged_documents
         self.labels = data['fake']
         self.ids = data['id']
         self.models = [
                 # PV-DBOW 
                 Doc2Vec(dm=0, dbow_words=1, window=8, min_count=19, workers=cores),
                 # PV-DM w/average
-                Doc2Vec(dm=1, dm_mean=1, window=8, min_count=19, workers=cores),
+                Doc2Vec(dm=1, dm_mean=1, window=8, min_count=19, workers=cores)
         ]
 
     def build_models(self):
