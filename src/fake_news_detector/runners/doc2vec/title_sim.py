@@ -19,7 +19,7 @@ if __name__ == "__main__":
     corpus['id'] = list(range(0,len(df.rows)))
 
     # 3. DOC2VEC Test
-    models = generate_doc2vec_model(data)
+    models = dc.generate_doc2vec_model(data)
     models.get_similarty_doc2vec(data)
     # 4. Check results
     error_1_1 = 0

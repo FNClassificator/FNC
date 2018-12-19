@@ -23,7 +23,7 @@ class Doc2VecModels():
 
     def __init__(self, data, tagged_documents):
         self.documents = tagged_documents
-        self.labels = data['fake']
+        self.labels = data['label']
         self.ids = data['id']
         self.models = [
                 # PV-DBOW 
