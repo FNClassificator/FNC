@@ -5,6 +5,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 
+from sklearn.metrics import accuracy_score, confusion_matrix
 
 def get_model(var):
     switcher = {
@@ -38,3 +39,21 @@ class ClassificationModel():
 
     def score(self, X, y):
         return self.model.score(X,y)
+
+    def confusion_matrix(self):
+        return 
+    
+    def accuracy_score(self):
+        return
+
+    def evaluate_prediction(self, prediction, target, output):
+        accuracy = accuracy_score(target, prediction)
+        cm = confusion_matrix(target, predictions)
+
+        if output:
+            print('Accuracy: ', accuracy)
+            print('Confusion matrix: ', cm)
+            print('(row=expected, col=predicted)')
+            cm_normalized = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+            plot_confusion_matrix(cm_normalized, 'Confusion Matrix Normalized')
+        return accuracy, cm
