@@ -4,8 +4,9 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
-
+import numpy as np
 from sklearn.metrics import accuracy_score, confusion_matrix
+import matplotlib.pyplot as plt
 
 def get_model(var):
     switcher = {
@@ -47,13 +48,27 @@ class ClassificationModel():
         return
 
     def evaluate_prediction(self, prediction, target, output):
+        print(target)
         accuracy = accuracy_score(target, prediction)
-        cm = confusion_matrix(target, predictions)
+        cm = confusion_matrix(target, prediction)
 
         if output:
             print('Accuracy: ', accuracy)
             print('Confusion matrix: ', cm)
             print('(row=expected, col=predicted)')
             cm_normalized = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
-            plot_confusion_matrix(cm_normalized, 'Confusion Matrix Normalized')
+            self.plot_confusion_matrix(cm_normalized, title='Confusion Matrix Normalized')
         return accuracy, cm
+
+    def plot_confusion_matrix(self, cm, title='Confusion matrix', cmap=plt.cm.Blues):
+        plt.imshow(cm, interpolation='nearest', cmap=cmap)
+        plt.title(title)
+        plt.colorbar()
+        tags = ['True', 'False']
+        tick_marks = np.arange(len(tags))
+        target_names = tags
+        plt.xticks(tick_marks, target_names, rotation=45)
+        plt.yticks(tick_marks, target_names)
+        plt.tight_layout()
+        plt.ylabel('True label')
+        plt.xlabel('Predicted label')

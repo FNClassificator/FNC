@@ -1,6 +1,6 @@
 
 from gensim.models.doc2vec import TaggedDocument
-from src.fake_news_detector.core.classification.doc2vec_models import Doc2VecModels
+from src.fake_news_detector.core.classification.doc2vec.models import Doc2VecModels
 import gensim
 """
 Build taggeds documents to build Doc2vec model
