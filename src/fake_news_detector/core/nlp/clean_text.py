@@ -37,7 +37,7 @@ Do all process
 1. tokenize by sentence
 2. tokenize in words each sentence
 """
-def clean_text_by_word(text, stopwords):
+def clean_text_by_word(text, stopwords=True):
     result = []
     sentences = clean_text_by_sentence(text, stopwords)
     for sentence in sentences:

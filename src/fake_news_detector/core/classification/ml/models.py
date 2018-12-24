@@ -38,6 +38,9 @@ class ClassificationModel():
         y = self.model.predict(X)
         return y
 
+    def show_topics(self, n_topics, n_words):
+        return self.model.show_topics(num_topics=n_topics, num_words=n_words)
+
     def score(self, X, y):
         return self.model.score(X,y)
 
@@ -48,7 +51,6 @@ class ClassificationModel():
         return
 
     def evaluate_prediction(self, prediction, target, output):
-        print(target)
         accuracy = accuracy_score(target, prediction)
         cm = confusion_matrix(target, prediction)
 
