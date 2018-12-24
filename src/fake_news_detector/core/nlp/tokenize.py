@@ -39,9 +39,12 @@ def remove_punctuations(tokens):
 # Return the same tokens without the list of tokens considered stop words by nltk
 def remove_stopwords(words):
     stop_words = stopwords.words('english')
-    stop_words_2 = ['they', 'I', 'i', 'a', 'the']
+    stop_words_2 = ['they', 'I', 'i', 'a', 'the', 'one']
     words = [w for w in words if not w in stop_words]
-    words = [w for w in words if not w in stop_words_2]
+    result = []
+    for word in words:
+        if not word in stop_words_2:
+            result.append(word)
     return words
 
 
@@ -81,3 +84,13 @@ def find_context(text, word):
 # Palabras del mismo contexto
 def get_similars(text, word):
     return text.similar(word)
+
+
+def to_lower(token_list):
+    # Lower case first word
+    if token_list:
+        word = list(token_list[0])
+        word[0] = word[0].lower()   
+        word = ''.join(word)
+        token_list[0] = word
+    return token_list

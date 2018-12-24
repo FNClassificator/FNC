@@ -17,18 +17,12 @@ def clean_text_by_sentence(text, stopwords):
         token_list = tk.tokenize_by_treebank_word(sent)
         token_list = tk.remove_punctuations(token_list)
         token_list = tk.lemma_tokens(token_list)
+        token_list = tk.to_lower(token_list)
         if stopwords:
             token_list = tk.remove_stopwords(token_list)
-
-        # Lower case first word
-        if token_list:
-            word = list(token_list[0])
-            word[0] = word[0].lower()   
-            word = ''.join(word)
-            token_list[0] = word
-            # Join all in one
-            clean_text = ' '.join(token_list)
-            result.append(clean_text)
+        # Join all in one
+        clean_text = ' '.join(token_list)
+        result.append(clean_text)
     return result
 
 

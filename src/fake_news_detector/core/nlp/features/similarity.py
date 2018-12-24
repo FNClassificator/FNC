@@ -3,7 +3,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 
-from src.fake_news_detector.nlp import clean_text as ct
+from src.fake_news_detector.core.nlp import clean_text as ct
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
