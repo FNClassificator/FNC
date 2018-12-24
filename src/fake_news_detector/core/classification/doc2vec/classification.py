@@ -1,6 +1,6 @@
 
 from gensim.models.doc2vec import TaggedDocument
-from src.fake_news_detector.core.classification.doc2vec_models import Doc2VecModels
+from src.fake_news_detector.core.classification.doc2vec.models import Doc2VecModels
 import gensim
 """
 Build taggeds documents to build Doc2vec model
@@ -134,3 +134,6 @@ def print_info(data, id_d,label, similars):
         fake = 'real'
     sim =  get_sim_labels(data, similars[0:3])
     print('Checking ID:', id_d, 'that is ', fake, 'and similars are: ', sim[0], sim[1], sim[2])
+
+#https://github.com/RaRe-Technologies/movie-plots-by-genre/blob/master/ipynb_with_output/Document%20classification%20with%20word%20embeddings%20tutorial%20-%20with%20output.ipynb
+#https://machinelearningmastery.com/compare-machine-learning-algorithms-python-scikit-learn/

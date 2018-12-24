@@ -11,31 +11,31 @@ from src.fake_news_detector.core.nlp.features import subject as sub
 from src.utils import io
 import itertools
 
-def get_all_text_tokenized(row):
+def get_all_text_tokenized(row, stopwords):
     # Title
-    title_token_word = ct.clean_text_by_word(row['title'])
-    title_token_sent = ct.clean_text_by_sentence(row['title'])
+    title_token_word = ct.clean_text_by_word(row['title'], stopwords)
+    title_token_sent = ct.clean_text_by_sentence(row['title'], stopwords)
     # Subtitle
     if row['subtitle'] == '':
         subtitle_token_word = []
         subtitle_token_sent = []
     else:
-        subtitle_token_word = ct.clean_text_by_word(row['subtitle'])
-        subtitle_token_sent = ct.clean_text_by_sentence(row['subtitle'])
+        subtitle_token_word = ct.clean_text_by_word(row['subtitle'], stopwords)
+        subtitle_token_sent = ct.clean_text_by_sentence(row['subtitle'], stopwords)
     # Text
     text_token_paragraph_word = []
     for text in row['text']:
-        text_token = ct.clean_text_by_sentence(text)
+        text_token = ct.clean_text_by_sentence(text, stopwords)
         text_token_paragraph_word.append(text_token[0])
     
     joined_text = '-'.join(row['text'])
-    text_token_word = ct.clean_text_by_word(joined_text)
-    text_token_sent = ct.clean_text_by_sentence(joined_text)
+    text_token_word = ct.clean_text_by_word(joined_text, stopwords)
+    text_token_sent = ct.clean_text_by_sentence(joined_text, stopwords)
 
     # Title + Subtitle + Text
     all_text = row['title'] + ' ' + row['subtitle'] + ' ' + joined_text
-    all_token_word = ct.clean_text_by_word(all_text)
-    all_token_sent = ct.clean_text_by_sentence(all_text)
+    all_token_word = ct.clean_text_by_word(all_text, stopwords)
+    all_token_sent = ct.clean_text_by_sentence(all_text, stopwords)
 
     tokendata = {
         'title': {
@@ -91,7 +91,7 @@ def get_content_dataset(dataset):
             'fake': None
         }
         
-        tokendata = get_all_text_tokenized(row)
+        tokendata = get_all_text_tokenized(row, False)
         sentiments = sent.get_words_by_sentiment(tokendata['all']['word'])
         dict_t['positive_words'] = sentiments[0]
         dict_t['negative_words'] = sentiments[1]
@@ -165,7 +165,7 @@ def get_style_dataset(dataset):
             'title_pert_total_negative_words': None,
             'fake': None
         }
-        tokendata = get_all_text_tokenized(row)
+        tokendata = get_all_text_tokenized(row, True),
 
         dict_t['sentiment'] = sent.get_sentiment_by_sentences(tokendata['all']['sent'])
         dict_t['n_words'] = q.n_words(tokendata['all']['word'])
@@ -218,7 +218,7 @@ def get_similarity_dataset(dataset):
             'sim_between_parapraphs': None,
             'fake': None
         }
-        tokendata = get_all_text_tokenized(row)
+        tokendata = get_all_text_tokenized(row, True)
 
         dict_t['sim_title_text'] = s.get_jaccard_similarity(tokendata['text']['joined_raw'], tokendata['title']['sent'][0])
         if row['subtitle'] == '':
