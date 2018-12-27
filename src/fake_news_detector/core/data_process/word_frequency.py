@@ -16,9 +16,15 @@ def get_word_freq(word_list, output, topn=300):
     # 2. Use nltk word distribuition
     fdist = FreqDist(all_words)
     
+    # 3. Get Unique words
+    unique_w = len(fdist)
+    #4. Top n Words
+    topn_w = fdist.most_common(topn)
+    
     if output:
-        print_frequency_distribution( fdist, topn)
-
+        print('Number of unique words: ', unique_w)
+        print('Top', topn, 'words:' )
+        print(topn_w)
     return fdist
 
 def print_frequency_distribution( fdist, topn):

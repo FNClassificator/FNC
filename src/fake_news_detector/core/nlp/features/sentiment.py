@@ -10,8 +10,9 @@ def get_words_by_sentiment(text_token):
     negatives = []
     for word in text_token:
         vs = analyzer.polarity_scores(word)
-        if vs['compound'] > 0.2 & (word not in no_positive_words):
-            positives.append(word)
+        if vs['compound'] > 0.2:
+            if not word in no_positive_words:
+                positives.append(word)
         elif vs['compound'] < -0.2:
             negatives.append(word)
     return positives, negatives

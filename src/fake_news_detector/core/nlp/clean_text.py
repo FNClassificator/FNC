@@ -1,5 +1,22 @@
 from src.fake_news_detector.core.nlp import tokenize as tk
 
+# TOKENIZE FOR DATASETS
+def tokenize_colunm_of_text(dataset, label, stopwords):
+    list_tokens = []
+    for _, row in dataset.iterrows():
+        tokens = clean_text_by_word(row[label], stopwords)
+        list_tokens.append(tokens)
+    return list_tokens
+
+def tokenize_colunm_of_text_list(dataset, label, stopwords):
+    list_tokens = []
+    for _, row in dataset.iterrows():
+        tokens = []
+        for paragraph in row[label]:
+            tokens += clean_text_by_word(paragraph, stopwords)
+        list_tokens.append(tokens)
+    return list_tokens
+
 
 """ 
 Do all process

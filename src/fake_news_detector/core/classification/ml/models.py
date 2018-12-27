@@ -44,13 +44,7 @@ class ClassificationModel():
     def score(self, X, y):
         return self.model.score(X,y)
 
-    def confusion_matrix(self):
-        return 
-    
-    def accuracy_score(self):
-        return
-
-    def evaluate_prediction(self, prediction, target, output):
+    def evaluate_prediction(self, target, prediction, output):
         accuracy = accuracy_score(target, prediction)
         cm = confusion_matrix(target, prediction)
 
@@ -62,7 +56,7 @@ class ClassificationModel():
             self.plot_confusion_matrix(cm_normalized, title='Confusion Matrix Normalized')
         return accuracy, cm
 
-    def plot_confusion_matrix(self, cm, title='Confusion matrix', cmap=plt.cm.Blues):
+    def plot_confusion_matrix(self, cm, title='Confusion matrix'):
         plt.imshow(cm, interpolation='nearest', cmap=cmap)
         plt.title(title)
         plt.colorbar()
