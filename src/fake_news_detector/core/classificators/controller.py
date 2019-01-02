@@ -1,10 +1,11 @@
 
-from src.fake_news_detector.core.classification.ml.models import ClassificationModel
+from src.fake_news_detector.core.classificators.binary.models import ClassificationModel
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 
 from IPython.display import Markdown, display
 
+""" HELPERS """
 
 def printmd(string):
     display(Markdown(string))

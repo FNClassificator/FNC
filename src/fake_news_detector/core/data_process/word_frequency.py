@@ -33,7 +33,6 @@ def print_frequency_distribution( fdist, topn):
     top_topn_words = fdist.most_common(topn)
     print(top_topn_words)
 
-
 def pert_of_difference(fdist_one, fdist_two, topn=300):
     top_words_one = fdist_one.most_common(topn)
     top_words_two = fdist_two.most_common(topn)
@@ -41,7 +40,6 @@ def pert_of_difference(fdist_one, fdist_two, topn=300):
     top_words_two_f = [w[0] for w in top_words_two]
     similarity = sim.get_jaccard_similarity(top_words_one_f, top_words_two_f)
     return similarity
-
 
 def doc_length_distribution(dataset):
     # Distribution of doc length
