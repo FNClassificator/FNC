@@ -9,8 +9,10 @@ def compute_all():
     dataset = rd.modelate_dataset()
     # 2. Clean title and extract features
 
-    content_dataset = ef.get_content_dataset(dataset)
-    io.write_json_file('src/data/dataset_content.json', content_dataset)
+    #content_dataset = ef.get_content_dataset(dataset)
+    #io.write_json_file('src/data/dataset_content.json', content_dataset)
+    raw_dataset = ef.get_raw_dataset(dataset)
+    io.write_json_file('src/data/dataset_raw.json', raw_dataset)
     #style_dataset = ef.get_style_dataset(dataset)
     #io.write_json_file('src/data/dataset_style.json', style_dataset)
     #similarity_dataset = ef.get_similarity_dataset(dataset)

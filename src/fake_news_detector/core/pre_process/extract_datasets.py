@@ -59,6 +59,34 @@ def get_all_text_tokenized(row, stopwords):
     }
     return tokendata
 
+
+def get_raw_dataset(dataset):
+    raw_dataset = {
+        'articles': []
+    }
+    for _, row in dataset.iterrows():
+        dict_t = {}
+        tokendata = get_all_text_tokenized(row, True)
+
+        dict_t['title_word'] = tokendata['title']['word']
+        dict_t['title_sent'] = tokendata['title']['sent']
+
+        dict_t['subtitle_word'] = tokendata['title']['word']
+        dict_t['subtitle_sent'] = tokendata['title']['sent']
+
+        dict_t['text_word'] = tokendata['text']['word'] 
+        dict_t['text_sent'] = tokendata['text']['sent']
+        dict_t['text_paragraph'] = tokendata['text']['paragraph']
+        dict_t['text_joined'] = tokendata['text']['joined_raw']
+
+        dict_t['all_word'] =  tokendata['all']['word']
+        dict_t['all_sent'] =  tokendata['all']['sent']
+
+        dict_t['fake'] = row['fake']
+        dict_t['fake'] = row['fake']
+        raw_dataset['articles'].append(dict_t)
+    return raw_dataset
+
 # DATASET 1: Content
 # Objective: Get info about article's words
 # Variables :
@@ -69,28 +97,12 @@ def get_all_text_tokenized(row, stopwords):
 #   - Conjunction words
 #   - Noun phrases words (N-grams)
 #   And the same, but only for headlines
-#   TODO: Subjects, subjective words
 def get_content_dataset(dataset):
     content_dataset = {
         'articles': []
     }
     for _, row in dataset.iterrows():
-        dict_t = {
-            'positive_words': None,
-            'negative_words': None,
-            'common_noun_words': None,
-            'adjective_words': None,
-            'conjunction_words': None,
-            'noun_phrases_words': None,
-            'title_positive_words': None,
-            'title_negative_words': None,
-            'title_common_noun_words': None,
-            'title_adjective_words': None,
-            'title_conjunction_words': None,
-            'title_noun_phrases_words': None,
-            'fake': None
-        }
-        
+        dict_t = {}
         tokendata = get_all_text_tokenized(row, False)
         sentiments = sent.get_words_by_sentiment(tokendata['all']['word'])
         dict_t['positive_words'] = sentiments[0]
