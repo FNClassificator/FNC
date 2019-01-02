@@ -15,14 +15,14 @@ return: all documents encoded by BOW and the dictionary
 """
 def run_BOW(corpus, filter_by_freq, output):
     #1. Create Dictionary
-    dictionary = v.text2Dictionary(corpus)
+    dictionary = text2Dictionary(corpus)
     if output:
-        v.dictionary_info(dictionary)
+        dictionary_info(dictionary)
     #2. Filter by freq
     if filter_by_freq:
-        v.filter_most_freq_words(dictionary)
+        filter_most_freq_words(dictionary)
         if output:
-            v.dictionary_info(dictionary)
+            dictionary_info(dictionary)
     
     bow_encoding = doc2BOW(corpus, dictionary)
     return bow_encoding, dictionary

@@ -1,6 +1,7 @@
 
 from sklearn.svm import SVC
-from sklearn.metrics import classification_report, confusion_matrix  
+
+
 
 #  SVC
 
@@ -22,7 +23,7 @@ def SVC_kernel(kernel, degree=1):
         return SVC(kernel=kernel, degree = degree)
     return SVC(kernel=kernel)
 
-def SVC_kernel_gamma(kernel, gamma, degree=1)
+def SVC_kernel_gamma(kernel, gamma, degree=1):
     if kernel == 'poly':
         return SVC(kernel=kernel, gamma=gamma, degree = degree)
     return SVC(kernel=kernel, gamma=gamma)
@@ -31,7 +32,7 @@ def SVC_kernel_gamma(kernel, gamma, degree=1)
 # TRAIN
 #####################
 def train(model, x_train, y_train):
-    return model.train(x_train, y_train)
+    return model.fit(x_train, y_train)
 
 #####################
 # PREDICT
@@ -40,24 +41,7 @@ def train(model, x_train, y_train):
 def precit_all(model, x_test):
     return model.predict(x_test)
 
-#####################
-# EVALUATION
-#####################
 
-def get_evaluation(y_test, y_pred):
-    confusion_m = confusion_matrix(y_test,y_pred)
-    class_report = classification_report(y_test,y_pred)
-    return confusion_m, class_report
-
-def print_evaluation(y_test, y_pred):
-
-    confusion_m, class_report = get_evaluation(y_test, y_pred)
-
-    print('Confusion matrix:')
-    print(confusion_m)
-    print('REPORT:')
-    print(class_report)
-    return class_report
 
 
 #####################
@@ -65,6 +49,6 @@ def print_evaluation(y_test, y_pred):
 #####################
 def run_results(model, x_train, y_train, x_test, y_test):
     train(model, x_train, y_train)
-    y_pred = predict_all(x_test)
-    return print_evaluation(y_test, y_pred)
+    y_pred = precit_all(model, x_test)
+    return print_evaluation(model, x_train, y_train, y_test, y_pred)
     

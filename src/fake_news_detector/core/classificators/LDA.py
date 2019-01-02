@@ -1,86 +1,89 @@
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis as QDA
+import numpy as np
+from matplotlib.colors import ListedColormap
+import matplotlib.pyplot as plt
+from src.fake_news_detector.core.classificators import lr, helpers
 
-from gensim.models.ldamodel import LdaModel
-from sklearn.metrics import classification_report, confusion_matrix  
-import pyLDAvis
+def run_performance(lda_model, X_train,y_train,X_test,y_test, scaler):
+    X_train, X_test = train(lda_model, X_train, y_train, X_test, scaler)  # Modelate
+    model, y_pred = predict_with_LR(X_train, y_train, X_test) # Classify
+    helpers.print_evaluation(model, X_train, y_train, y_test, y_pred)
+    #splot = visualize(lda_model, X_test, y_test, y_pred, 1)
+    #plot_lda_cov(lda_model, splot)
 
-########### LDA FOR TOPIC 
+####################
+# MODEL   FUNCTIONS
+####################
 
-###############
-# CREATE MODEL 
-###############
+def create_LDA_model(n_components=1):
+    return LDA(n_components=n_components)
 
-def create_LDA(corpus, dictionary, num_topics=2, passes=15):
-    return LdaModel(corpus, 
-                    num_topics = num_topics, 
-                    id2word=dictionary, 
-                    passes=15)
+def train(lda_model, X_train, y_train, X_test, scaler):
+    if scaler:
+        scaler = MinMaxScaler()
+        X_train = scaler.fit_transform(X_train)
+        X_test = scaler.transform(X_test)
+    X_train = lda_model.fit_transform(X_train, y_train)
+    X_test = lda_model.transform(X_test)
+    return X_train, X_test
 
-###############
-# EVALUATION  
-###############
+def predict_with_LR(X_train, y_train, X_test):
+    lr_model = lr.create_model()
+    lr.train_model(lr_model,X_train,y_train)
+    return lr_model, lr.predict(lr_model, X_test)    
 
-def get_topics(model, num_words=5):
-    return model.print_topics(num_words=num_words)
+#############
+#  DISPLAY
+#############
 
-def print_topics(model, num_words):
-    topics =  model.print_topics(num_words=num_words)
-    for topic in topics:
-        print(topic)
+def visualize(lda, X, y, y_pred, fig_index):
+    splot = plt.subplot(2, 2, fig_index)
+    if fig_index == 1:
+        plt.title('Linear Discriminant Analysis')
+        plt.ylabel('Data with\n fixed covariance')
+    elif fig_index == 2:
+        plt.title('Quadratic Discriminant Analysis')
+    elif fig_index == 3:
+        plt.ylabel('Data with\n varying covariances')
 
-def get_document_topic(model, document):
-    return model.get_document_topic(document)
+    tp = (y == y_pred)  # True Positive
+    tp0, tp1 = tp[y == 0], tp[y == 1]
+    X0, X1 = X[y == 0], X[y == 1]
+    X0_tp, X0_fp = X0[tp0], X0[~tp0]
+    X1_tp, X1_fp = X1[tp1], X1[~tp1]
 
-def print_doc_topics(model, document):
-    topics = get_doc_topics(model,document)
-    print(topic)
+    alpha = 0.5
 
-def get_top_words_by_id(lda_model, topic_id, n_top=5):
-    id_tuples = lda_model.get_topic_terms(topic_id, topn=n_top)
-    word_ids = np.array(id_tuples)[:,0]
-    words = map(lambda id_: lda_model.id2word[id_], word_ids)
-    return words
+    # class 0: dots
+    plt.plot(X0_tp[:, 0], X0_tp[:, 1], 'o', alpha=alpha, color='red', markeredgecolor='k')
+    plt.plot(X0_fp[:, 0], X0_fp[:, 1], '*', alpha=alpha, color='#990000', markeredgecolor='k')  # dark red
 
-###############
-# Y EVALUATION  
-###############
+    # class 1: dots
+    plt.plot(X1_tp[:, 0], X1_tp[:, 1], 'o', alpha=alpha, color='blue', markeredgecolor='k')
+    plt.plot(X1_fp[:, 0], X1_fp[:, 1], '*', alpha=alpha, color='#000099', markeredgecolor='k')  # dark blue
 
+    # class 0 and 1 : areas
+    nx, ny = 200, 100
+    x_min, x_max = plt.xlim()
+    y_min, y_max = plt.ylim()
+    xx, yy = np.meshgrid(np.linspace(x_min, x_max, nx),
+                         np.linspace(y_min, y_max, ny))
+    Z = lda.predict_proba(np.c_[xx.ravel(), yy.ravel()])
+    Z = Z[:, 1].reshape(xx.shape)
+    plt.pcolormesh(xx, yy, Z, cmap='red_blue_classes',
+                   norm=colors.Normalize(0., 1.))
+    plt.contour(xx, yy, Z, [0.5], linewidths=2., colors='k')
 
-def get_doc_max_topic(model, document):
-    topics = get_document_topic(model, document)
-    max_topic = topics[0][0]
-    max_value = topics[0][1]
+    # means
+    plt.plot(lda.means_[0][0], lda.means_[0][1],
+             'o', color='black', markersize=10, markeredgecolor='k')
+    plt.plot(lda.means_[1][0], lda.means_[1][1],
+             'o', color='black', markersize=10, markeredgecolor='k')
 
-    for topic in topics:
-        if max_value < topic[1]:
-            max_value = topic[1]
-            max_topic = topic[0]
+    return splot
 
-    return max_topic
-
-def get_all_topic_predictions(model, documents):
-    results = []
-    for document in documents:
-        id_topic = get_doc_max_topic(model, document)
-        result.append(id_topic)
-    return result
-
-def get_evaluation(y_test, y_pred):
-    confusion_m = confusion_matrix(y_test,y_pred)
-    class_report = classification_report(y_test,y_pred)
-    return confusion_m, class_report
-
-
-def print_evaluation(y_test, y_pred):
-    confusion_m, class_report = get_evaluation(y_test, y_pred)
-    print('Confusion matrix:')
-    print(confusion_m)
-    print('REPORT:')
-    print(class_report)
-
-###############
-# VISUALISE  
-###############
-
-def display_modeling(lda,dictionary, coprus):
-    lda_display = pyLDAvis.gensim.prepare(lda, corpus, dictionary, sort_topics=False)
-    pyLDAvis.display(lda_display)
+def plot_lda_cov(lda, splot):
+    plot_ellipse(splot, lda.means_[0], lda.covariance_, 'red')
+    plot_ellipse(splot, lda.means_[1], lda.covariance_, 'blue')

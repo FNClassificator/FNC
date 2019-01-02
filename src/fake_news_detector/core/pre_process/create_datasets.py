@@ -59,6 +59,34 @@ def get_all_text_tokenized(row, stopwords):
     }
     return tokendata
 
+
+def get_raw_dataset(dataset):
+    raw_dataset = {
+        'articles': []
+    }
+    for _, row in dataset.iterrows():
+        dict_t = {}
+        tokendata = get_all_text_tokenized(row, True)
+
+        dict_t['title_word'] = tokendata['title']['word']
+        dict_t['title_sent'] = tokendata['title']['sent']
+
+        dict_t['subtitle_word'] = tokendata['title']['word']
+        dict_t['subtitle_sent'] = tokendata['title']['sent']
+
+        dict_t['text_word'] = tokendata['text']['word'] 
+        dict_t['text_sent'] = tokendata['text']['sent']
+        dict_t['text_paragraph'] = tokendata['text']['paragraph']
+        dict_t['text_joined'] = tokendata['text']['joined_raw']
+
+        dict_t['all_word'] =  tokendata['all']['word']
+        dict_t['all_sent'] =  tokendata['all']['sent']
+
+        dict_t['fake'] = row['fake']
+        dict_t['fake'] = row['fake']
+        raw_dataset['articles'].append(dict_t)
+    return raw_dataset
+
 # DATASET 1: Content
 # Objective: Get info about article's words
 # Variables :
@@ -74,22 +102,7 @@ def get_content_dataset(dataset):
         'articles': []
     }
     for _, row in dataset.iterrows():
-        dict_t = {
-"""             'positive_words': None,
-            'negative_words': None,
-            'common_noun_words': None,
-            'adjective_words': None,
-            'conjunction_words': None,
-            'noun_phrases_words': None,
-            'title_positive_words': None,
-            'title_negative_words': None,
-            'title_common_noun_words': None,
-            'title_adjective_words': None,
-            'title_conjunction_words': None,
-            'title_noun_phrases_words': None,
-            'fake': None """
-        }
-        
+        dict_t = {}
         tokendata = get_all_text_tokenized(row, False)
         sentiments = sent.get_words_by_sentiment(tokendata['all']['word'])
         dict_t['positive_words'] = sentiments[0]
@@ -117,39 +130,6 @@ def get_content_dataset(dataset):
         content_dataset['articles'].append(dict_t)
     return content_dataset
 
-# DATASET 1.2: Raw content
-# Variables:
-# - Title
-# - Subtitle
-# - Text
-def get_raw_dataset(dataset):
-    raw_dataset = {
-        'articles': []
-    }
-    for _, row in dataset.iterrows():
-        tokendata = get_all_text_tokenized(row, True)
-        dict_t = {}
-
-        dict_t['title_word'] = tokendata['title']['word']
-        dict_t['title_sent'] = tokendata['title']['sent']
-        
-        dict_t['subtitle_word'] = tokendata['subtitle']['word']
-        dict_t['subtitle_sent'] = tokendata['subtitle']['sent']
-
-        dict_t['text_word'] = tokendata['text']['word']
-        dict_t['text_sent'] =  tokendata['text']['sent']
-        dict_t['text_paragraph'] = tokendata['text']['paragraph']
-        dict_t['text_joined_raw'] = tokendata['text']['joined_raw']
-
-        dict_t['all_word'] = tokendata['all']['word']
-        dict_t['all_sent'] = tokendata['all']['sent']
-
-        dict_t['fake'] = row['fake']
-        raw_dataset['articles'].append(dict_t)
-
-    return raw_dataset
-
-
 # DATASET 2: Style
 # Objective: Get info about how is written
 # Variables :
@@ -176,7 +156,7 @@ def get_style_dataset(dataset):
     }
     for _, row in dataset.iterrows():
         dict_t = {
-"""             'sentiment': None,
+            'sentiment': None,
             'n_words': None,
             'n_sentences': None,
             'pert_total_verbs': None,
@@ -195,10 +175,9 @@ def get_style_dataset(dataset):
             'title_pert_total_conj_prep': None,
             'title_pert_total_positive_words': None,
             'title_pert_total_negative_words': None,
-            'fake': None """
+            'fake': None
         }
-        tokendata = get_all_text_tokenized(row, True),
-
+        tokendata = get_all_text_tokenized(row, True)
         dict_t['sentiment'] = sent.get_sentiment_by_sentences(tokendata['all']['sent'])
         dict_t['n_words'] = q.n_words(tokendata['all']['word'])
         dict_t['n_sentences'] = q.n_sentences(tokendata['all']['sent'])
