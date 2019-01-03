@@ -31,7 +31,7 @@ def train(model, length):
 #####################
 
 def get_top_similars(model, word,  topn=5):
-    return model.wv.most_similart(positive=word, topn=topn)
+    return model.wv.most_similar(positive=word, topn=topn)
 
 def print_similars(model, word)_
     top_w = get_top_similars(model, word)

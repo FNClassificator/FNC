@@ -5,49 +5,43 @@ from gensim.corpora import Dictionary
 ######## BOW ENCODING ########
 ##############################
 
-# MAIN FUNCTION
 
-""" 
-Vectorize Text to BOW
-@corpus: Corpus is all the text to encode
-@filter_by_freq: If true, dictionary only includes most frequent words
-return: all documents encoded by BOW and the dictionary
-"""
-def run_BOW(corpus, filter_by_freq, output):
-    #1. Create Dictionary
-    dictionary = text2Dictionary(corpus)
+# MAIN FUNCTION ......................................................
+def bow_encoding(data, output, filter_by_freq, no_above=0.6, no_below=2):
+    # Create dictionary
+    dictionary = create_dictionary(data)
+
     if output:
-        dictionary_info(dictionary)
-    #2. Filter by freq
+        print_size(dictionary)
+
+    # Filter most frequency words
     if filter_by_freq:
-        filter_most_freq_words(dictionary)
+        filter_by_freq(dictionary,no_above=no_above, no_below=no_below)
         if output:
-            dictionary_info(dictionary)
-    
-    bow_encoding = doc2BOW(corpus, dictionary)
-    return bow_encoding, dictionary
+            print_size(dictionary)
 
-# PROCESS FUNCTIONS
+    # Encode data to bow
+    corpus = data2bow(dictionary,data)
+    return corpus, dictionary
+# ...................................................................
 
-""" 
-Vectorize Text to Dictionary
-@corpus: Corpus is all the text to encode
-"""
-def text2Dictionary(corpus):
-    return Dictionary(documents=corpus)
 
-def doc2BOW(corpus, dictionary):
-    encoded_corpus = []
-    for elem in corpus: # Elem has to be a list of tokens
-        encoded_corpus.append(dictionary.doc2bow(elem))
-    return encoded_corpus
+# BOW FUNCTIONS
+def create_dictionary(data):
+    return Dictionary(documents=data)
 
-def filter_most_freq_words(dictionary, noabove=0.8, nobelow=3):
-    dictionary.filter_extremes(no_above=noabove, no_below=nobelow)
-    dictionary.compactify()  # Reindexes the remaining words after filtering
-    
+def filter_by_freq(dictionary, no_above=0.8, no_below=3):
+    dictionary.filter_extremes(no_above=no_above, no_below=no_below)
+    dictionary.compactify()
+    return
 
-# INFO FUNCTIONS
+def data2bow(dictionary, data):
+    bow_encoding = []
+    for document in data:
+        bow_encoding.append(dictionary.doc2bow(document))
+    return bow_encoding
 
-def dictionary_info(dictionary):
+# DICTIONARY INFO
+
+def print_size(dictionary):
     print("Found {} words.".format(len(dictionary.values())))
