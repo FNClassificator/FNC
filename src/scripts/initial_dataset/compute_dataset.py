@@ -1,5 +1,5 @@
-from src.fake_news_detector.core.pre_process import extract_datasets as ef
-from src.fake_news_detector.core.pre_process import raw_dataset as rd
+from src.fake_news_detector.core.pre_process import create_datasets as ef
+from src.fake_news_detector.core.pre_process import read_dataset as rd
 from src.utils import io
 # OBJECTIVE: Classificate by title
  
