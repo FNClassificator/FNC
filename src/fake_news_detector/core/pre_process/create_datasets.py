@@ -16,12 +16,15 @@ def get_all_text_tokenized(row, stopwords):
     title_token_word = ct.clean_text_by_word(row['title'], stopwords)
     title_token_sent = ct.clean_text_by_sentence(row['title'], stopwords)
     # Subtitle
-    if row['subtitle'] == '':
-        subtitle_token_word = []
-        subtitle_token_sent = []
-    else:
-        subtitle_token_word = ct.clean_text_by_word(row['subtitle'], stopwords)
-        subtitle_token_sent = ct.clean_text_by_sentence(row['subtitle'], stopwords)
+    if 'subtitle' in row:
+        if row['subtitle'] == "":
+            print(row['subtitle'])
+            subtitle_token_word = []
+            subtitle_token_sent = []
+        else:
+            print(row['subtitle'])
+            subtitle_token_word = ct.clean_text_by_word(row['subtitle'], stopwords)
+            subtitle_token_sent = ct.clean_text_by_sentence(row['subtitle'], stopwords)
     # Text
     text_token_paragraph_word = []
     for text in row['text']:
@@ -59,6 +62,34 @@ def get_all_text_tokenized(row, stopwords):
     }
     return tokendata
 
+
+def get_raw_dataset(dataset):
+    raw_dataset = {
+        'articles': []
+    }
+    for _, row in dataset.iterrows():
+        dict_t = {}
+        tokendata = get_all_text_tokenized(row, True)
+
+        dict_t['title_word'] = tokendata['title']['word']
+        dict_t['title_sent'] = tokendata['title']['sent']
+
+        dict_t['subtitle_word'] = tokendata['title']['word']
+        dict_t['subtitle_sent'] = tokendata['title']['sent']
+
+        dict_t['text_word'] = tokendata['text']['word'] 
+        dict_t['text_sent'] = tokendata['text']['sent']
+        dict_t['text_paragraph'] = tokendata['text']['paragraph']
+        dict_t['text_joined'] = tokendata['text']['joined_raw']
+
+        dict_t['all_word'] =  tokendata['all']['word']
+        dict_t['all_sent'] =  tokendata['all']['sent']
+
+        dict_t['fake'] = row['fake']
+        dict_t['fake'] = row['fake']
+        raw_dataset['articles'].append(dict_t)
+    return raw_dataset
+
 # DATASET 1: Content
 # Objective: Get info about article's words
 # Variables :
@@ -69,29 +100,19 @@ def get_all_text_tokenized(row, stopwords):
 #   - Conjunction words
 #   - Noun phrases words (N-grams)
 #   And the same, but only for headlines
-#   TODO: Subjects, subjective words
 def get_content_dataset(dataset):
     content_dataset = {
         'articles': []
     }
+    pos = 0
     for _, row in dataset.iterrows():
-        dict_t = {
-            'positive_words': None,
-            'negative_words': None,
-            'common_noun_words': None,
-            'adjective_words': None,
-            'conjunction_words': None,
-            'noun_phrases_words': None,
-            'title_positive_words': None,
-            'title_negative_words': None,
-            'title_common_noun_words': None,
-            'title_adjective_words': None,
-            'title_conjunction_words': None,
-            'title_noun_phrases_words': None,
-            'fake': None
-        }
-        
+        print('Document {}:'.format(pos))
+        dict_t = {}
         tokendata = get_all_text_tokenized(row, False)
+
+        dict_t['all_word'] =  tokendata['all']['word']
+        dict_t['all_joined'] =  tokendata['text']['joined_raw']
+
         sentiments = sent.get_words_by_sentiment(tokendata['all']['word'])
         dict_t['positive_words'] = sentiments[0]
         dict_t['negative_words'] = sentiments[1]
@@ -113,9 +134,10 @@ def get_content_dataset(dataset):
         dict_t['title_adjective_words'] = w.get_unique_type_words(tagged_words, 'J')
         dict_t['title_conjunction_words'] = w.get_unique_type_words(tagged_words, 'C')
         dict_t['title_noun_phrases_words'] = w.get_noun_phrases(tagged_words)
-        dict_t['title_subject'] = sub.get_subjects(tokendata['title']['sent'])
+        #dict_t['title_subject'] = sub.get_subjects(tokendata['title']['sent'])
         dict_t['fake'] = row['fake']
         content_dataset['articles'].append(dict_t)
+        pos += 1
     return content_dataset
 
 # DATASET 2: Style
@@ -135,38 +157,14 @@ def get_content_dataset(dataset):
 #   - mean of words per sentence
 #   - mean characters per word
 #   - mean noun phrases
-#   - reduncancy
-#   And the same in some cases for only for headlines
-#   TODO: Has generic subject, has tentative words, numer of quotes, redundacy
 def get_style_dataset(dataset):
     style_dataset = {
         'articles': []
     }
     for _, row in dataset.iterrows():
         dict_t = {
-            'sentiment': None,
-            'n_words': None,
-            'n_sentences': None,
-            'pert_total_verbs': None,
-            'pert_total_nouns': None,
-            'pert_total_adj': None,
-            'pert_total_conj_prep': None,
-            'pert_total_positive_words': None,
-            'pert_total_negative_words': None,
-            'pert_different_words': None,
-            'n_quotes': None,
-            'mean_words_per_sentence': None,
-            'mean_character_per_word': None,
-            'mean_noun_phrases': None,
-            'title_sentiment': None,
-            'title_n_words': None,
-            'title_pert_total_conj_prep': None,
-            'title_pert_total_positive_words': None,
-            'title_pert_total_negative_words': None,
-            'fake': None
         }
-        tokendata = get_all_text_tokenized(row, True),
-
+        tokendata = get_all_text_tokenized(row, True)
         dict_t['sentiment'] = sent.get_sentiment_by_sentences(tokendata['all']['sent'])
         dict_t['n_words'] = q.n_words(tokendata['all']['word'])
         dict_t['n_sentences'] = q.n_sentences(tokendata['all']['sent'])
@@ -181,7 +179,7 @@ def get_style_dataset(dataset):
         dict_t['pert_total_positive_words'] = sentiments[0]
         dict_t['pert_total_negative_words'] = sentiments[1]
         dict_t['pert_different_words'] = q.pert_diferent_words(tokendata['all']['word'])
-        #dict_t['n_quotes'] = q.n_quotes(tokendata['all']['word'])
+
         dict_t['mean_words_per_sentence'] = q.mean_word_per_sent(tokendata['all']['word'])
         dict_t['mean_character_per_word'] = q.mean_characters_per_word(tokendata['all']['word'])
 

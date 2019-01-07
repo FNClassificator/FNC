@@ -1,6 +1,7 @@
 from nltk import FreqDist
 import numpy as np
 import matplotlib.pyplot as plt
+from src.fake_news_detector.core.nlp.features import similarity as sim
 
 def get_all_words(word_list):
     all_words = []
@@ -15,9 +16,15 @@ def get_word_freq(word_list, output, topn=300):
     # 2. Use nltk word distribuition
     fdist = FreqDist(all_words)
     
+    # 3. Get Unique words
+    unique_w = len(fdist)
+    #4. Top n Words
+    topn_w = fdist.most_common(topn)
+    
     if output:
-        print_frequency_distribution( fdist, topn)
-
+        print('Number of unique words: ', unique_w)
+        print('Top', topn, 'words:' )
+        print(topn_w)
     return fdist
 
 def print_frequency_distribution( fdist, topn):
@@ -25,6 +32,14 @@ def print_frequency_distribution( fdist, topn):
     print('Top', topn, 'words:' )
     top_topn_words = fdist.most_common(topn)
     print(top_topn_words)
+
+def pert_of_difference(fdist_one, fdist_two, topn=300):
+    top_words_one = fdist_one.most_common(topn)
+    top_words_two = fdist_two.most_common(topn)
+    top_words_one_f = [w[0] for w in top_words_one]
+    top_words_two_f = [w[0] for w in top_words_two]
+    similarity = sim.get_jaccard_similarity(top_words_one_f, top_words_two_f)
+    return similarity
 
 def doc_length_distribution(dataset):
     # Distribution of doc length

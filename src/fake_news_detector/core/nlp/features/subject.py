@@ -1,7 +1,7 @@
 import spacy
 import nltk
-from  src.fake_news_detector.nlp import chunking as c
-from  src.fake_news_detector.nlp.features import quantity as q
+from  src.fake_news_detector.core.nlp import chunking as c
+from  src.fake_news_detector.core.nlp.features import quantity as q
 # DETECT SUBJECT
 
 

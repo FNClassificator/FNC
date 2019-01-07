@@ -1,5 +1,22 @@
 from src.fake_news_detector.core.nlp import tokenize as tk
 
+# TOKENIZE FOR DATASETS
+def tokenize_colunm_of_text(dataset, label, stopwords):
+    list_tokens = []
+    for _, row in dataset.iterrows():
+        tokens = clean_text_by_word(row[label], stopwords)
+        list_tokens.append(tokens)
+    return list_tokens
+
+def tokenize_colunm_of_text_list(dataset, label, stopwords):
+    list_tokens = []
+    for _, row in dataset.iterrows():
+        tokens = []
+        for paragraph in row[label]:
+            tokens += clean_text_by_word(paragraph, stopwords)
+        list_tokens.append(tokens)
+    return list_tokens
+
 
 """ 
 Do all process
@@ -17,18 +34,12 @@ def clean_text_by_sentence(text, stopwords):
         token_list = tk.tokenize_by_treebank_word(sent)
         token_list = tk.remove_punctuations(token_list)
         token_list = tk.lemma_tokens(token_list)
+        token_list = tk.to_lower(token_list)
         if stopwords:
             token_list = tk.remove_stopwords(token_list)
-
-        # Lower case first word
-        if token_list:
-            word = list(token_list[0])
-            word[0] = word[0].lower()   
-            word = ''.join(word)
-            token_list[0] = word
-            # Join all in one
-            clean_text = ' '.join(token_list)
-            result.append(clean_text)
+        # Join all in one
+        clean_text = ' '.join(token_list)
+        result.append(clean_text)
     return result
 
 

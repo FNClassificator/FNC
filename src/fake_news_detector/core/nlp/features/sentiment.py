@@ -2,6 +2,8 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from nltk.tokenize import sent_tokenize, word_tokenize
 
 
+no_positive_words = ['party']
+
 def get_words_by_sentiment(text_token):
     analyzer = SentimentIntensityAnalyzer()
     positives = []
@@ -9,7 +11,8 @@ def get_words_by_sentiment(text_token):
     for word in text_token:
         vs = analyzer.polarity_scores(word)
         if vs['compound'] > 0.2:
-            positives.append(word)
+            if not word in no_positive_words:
+                positives.append(word)
         elif vs['compound'] < -0.2:
             negatives.append(word)
     return positives, negatives
