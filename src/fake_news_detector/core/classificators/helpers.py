@@ -10,14 +10,15 @@ def get_evaluation(y_test, y_pred):
     score = precision_score(y_test, y_pred)
     return confusion_m, class_report, score
 
-def print_evaluation(model, x_train, y_train, y_test, y_pred):
+def print_evaluation(model, x_train, y_train, y_test, y_pred, output):
 
-    confusion_m, class_report, score = get_evaluation(y_test, y_pred)
-
-    print('Confusion matrix:')
-    print(confusion_m)
-    print('REPORT:')
-    print(class_report)
-    print('Train precision score:', model.score(x_train, y_train))
-    print('Test precision score:', score)
-    return class_report
+    confusion_m, class_report, score_test = get_evaluation(y_test, y_pred)
+    score_train = model.score(x_train, y_train)
+    if output:
+        print('Confusion matrix:')
+        print(confusion_m)
+        print('REPORT:')
+        print(class_report)
+        print('Train precision score:', score_train)
+        print('Test precision score:', score_test)
+    return score_train, score_test

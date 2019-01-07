@@ -1,6 +1,6 @@
 
 from sklearn.svm import SVC
-
+from src.fake_news_detector.core.classificators import helpers
 
 
 #  SVC
@@ -14,11 +14,8 @@ from sklearn.svm import SVC
 # CREATE MODEL
 #####################
 
-def SVC_default():
-    return SVC()
-
 # linear / poly / rbf / sigmoid
-def SVC_kernel(kernel, degree=1):
+def create_SVC(kernel, degree=1):
     if kernel == 'poly':
         return SVC(kernel=kernel, degree = degree)
     return SVC(kernel=kernel)
@@ -41,14 +38,21 @@ def train(model, x_train, y_train):
 def precit_all(model, x_test):
     return model.predict(x_test)
 
-
-
-
 #####################
 # ALL 
 #####################
-def run_results(model, x_train, y_train, x_test, y_test):
+def run_model(model, x_train, y_train, x_test, y_test, output):
     train(model, x_train, y_train)
     y_pred = precit_all(model, x_test)
-    return print_evaluation(model, x_train, y_train, y_test, y_pred)
+
+    score_train, score_test = helpers.print_evaluation(model, x_train, y_train, y_test, y_pred, output)
+    return score_train, score_test
     
+def run_models(models, x_train, y_train, x_test, y_test):
+    scores = {}
+    for model in models:
+        score_train, score_test = run_model(models[model], x_train, y_train, x_test, y_test, False)
+        scores[model] = {}
+        scores[model]['train'] =  score_train
+        scores[model]['test'] = score_test
+    return scores

@@ -7,7 +7,7 @@ from gensim.corpora import Dictionary
 
 
 # MAIN FUNCTION ......................................................
-def bow_encoding(data, output, filter_by_freq, no_above=0.6, no_below=2):
+def bow_encoding(data, output, filter_freq, no_above=0.6, no_below=2):
     # Create dictionary
     dictionary = create_dictionary(data)
 
@@ -15,7 +15,7 @@ def bow_encoding(data, output, filter_by_freq, no_above=0.6, no_below=2):
         print_size(dictionary)
 
     # Filter most frequency words
-    if filter_by_freq:
+    if filter_freq:
         filter_by_freq(dictionary,no_above=no_above, no_below=no_below)
         if output:
             print_size(dictionary)
