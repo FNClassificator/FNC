@@ -39,13 +39,13 @@ def remove_punctuations(tokens):
 # Return the same tokens without the list of tokens considered stop words by nltk
 def remove_stopwords(words):
     stop_words = stopwords.words('english')
-    stop_words_2 = ['they', 'I', 'i', 'a', 'the', 'one']
+    stop_words_2 = ['they', 'I', 'i', 'a', 'the', 'one', 'The']
     words = [w for w in words if not w in stop_words]
     result = []
     for word in words:
         if not word in stop_words_2:
             result.append(word)
-    return words
+    return result
 
 
 #  Steam tokens

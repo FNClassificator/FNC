@@ -1,0 +1,30 @@
+{
+    "abc.com": [
+        "https://sevilla.abc.es/andalucia/sevi-juanma-moreno-sera-investido-presidente-16-enero-201901101834_noticia.html",
+        "https://www.abc.es/sociedad/abci-gobierno-quiere-aprobar-urgencia-ley-entierra-castellano-201901092317_noticia.html",
+        "https://www.abc.es/economia/abci-espana-dice-iberia-sera-europea-caso-brexit-sin-acuerdo-201901101923_noticia.html"
+    ],
+    "lavanguardia.com": [
+        "https://www.lavanguardia.com/politica/20190110/454067377884/vox-ciudadanos-pp-andalucia-choque-centralidad-investidura.html",
+        "https://www.lavanguardia.com/internacional/20190110/454065399325/trump-declarar-estado-emergencia-muro-estados-unidos.html",
+        "https://www.lavanguardia.com/sucesos/20190110/454068644540/asesinato-banyoles-menor-madre-confiesa.html",
+        "https://www.lavanguardia.com/ciencia/fisica-espacio/20190110/454066055829/chime-rafagas-estallidos-ondas-radio-espacio-profundo.html"
+    ],
+    "europapress.com": [
+        "https://www.europapress.es/nacional/noticia-pedro-sanchez-comprometera-cumplir-inversiones-previstas-estatut-catalunya-20190110173735.html",
+        "https://www.europapress.es/economia/finanzas-00340/noticia-bbva-investiga-junio-contratacion-firma-villarejo-tomara-medidas-si-hay-irregularidades-20190110164305.html",
+        "https://www.europapress.es/nacional/noticia-policia-no-cree-sentencia-supremo-grado-urjc-ponga-riesgo-nombramiento-mandos-20190110182348.html"
+
+    ],
+    "elperiodico.com": [
+        "https://www.elperiodico.com/es/sociedad/20190109/hombre-estrella-coche-contra-estudios-tv-3-7236815",
+        "https://www.elperiodico.com/es/politica/20190110/gobierno-inspectores-armas-exportacion-paises-7239362",
+        "https://www.elperiodico.com/es/politica/20181121/senado-votacion-mocion-condena-franquismo-7159453"
+    ],
+    "elpais.com": [
+        "https://elpais.com/sociedad/2019/01/04/actualidad/1546613323_484502.html",
+        "https://elpais.com/sociedad/2019/01/02/actualidad/1546448104_339822.html",
+        "https://elpais.com/politica/2019/01/10/actualidad/1547108190_720905.html",
+        "https://elpais.com/internacional/2019/01/10/america/1547150403_382340.html"
+    ]
+}

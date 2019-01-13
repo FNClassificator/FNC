@@ -15,14 +15,15 @@ def get_all_text_tokenized(row, stopwords):
     # Title
     title_token_word = ct.clean_text_by_word(row['title'], stopwords)
     title_token_sent = ct.clean_text_by_sentence(row['title'], stopwords)
+
     # Subtitle
     if 'subtitle' in row:
         if row['subtitle'] == "":
-            print(row['subtitle'])
+          #  print(row['subtitle'])
             subtitle_token_word = []
             subtitle_token_sent = []
         else:
-            print(row['subtitle'])
+          #  print(row['subtitle'])
             subtitle_token_word = ct.clean_text_by_word(row['subtitle'], stopwords)
             subtitle_token_sent = ct.clean_text_by_sentence(row['subtitle'], stopwords)
     # Text
@@ -108,10 +109,13 @@ def get_content_dataset(dataset):
     for _, row in dataset.iterrows():
         print('Document {}:'.format(pos))
         dict_t = {}
-        tokendata = get_all_text_tokenized(row, False)
+        tokendata = get_all_text_tokenized(row, True)
 
         dict_t['all_word'] =  tokendata['all']['word']
         dict_t['all_joined'] =  tokendata['text']['joined_raw']
+
+        dict_t['title_word'] =  tokendata['title']['word']
+        dict_t['subtitle_word'] =  tokendata['subtitle']['word']
 
         sentiments = sent.get_words_by_sentiment(tokendata['all']['word'])
         dict_t['positive_words'] = sentiments[0]
@@ -121,6 +125,7 @@ def get_content_dataset(dataset):
         dict_t['common_noun_words'] = w.get_unique_type_words(tagged_words,'N')
         dict_t['adjective_words'] = w.get_unique_type_words(tagged_words,'J')
         dict_t['conjunction_words'] = w.get_unique_type_words(tagged_words, 'C')
+        dict_t['verb_words'] = w.get_unique_type_words(tagged_words,'V')
         dict_t['noun_phrases_words'] = w.get_noun_phrases(tagged_words)
         
     
@@ -180,8 +185,8 @@ def get_style_dataset(dataset):
         dict_t['pert_total_negative_words'] = sentiments[1]
         dict_t['pert_different_words'] = q.pert_diferent_words(tokendata['all']['word'])
 
-        dict_t['mean_words_per_sentence'] = q.mean_word_per_sent(tokendata['all']['word'])
-        dict_t['mean_character_per_word'] = q.mean_characters_per_word(tokendata['all']['word'])
+        dict_t['mean_words_per_sentence'] = q.mean_word_per_sent(tokendata['all']['sent'])
+        dict_t['mean_character_per_word'] = q.mean_characters_per_word(tokendata['all']['sent'])
 
 
         dict_t['title_sentiment'] = sent.get_sentiment_by_sentences(tokendata['title']['sent'])
@@ -194,41 +199,3 @@ def get_style_dataset(dataset):
         dict_t['fake'] = row['fake']
         style_dataset['articles'].append(dict_t)
     return style_dataset
-
-# DATASET 3: Similarity
-# Objective: Get info about diferences inside it content and the other documents
-# Variables :
-#   - Similarity between title and subtitle
-#   - Similarity between title and text
-#   - Similarity between text and subtitle
-#   - TODO: Similarity between paragraphs in text (mean, min, max)
-#   - TODO: Similarity between title of others
-#   - TODO: Similarity between other texts
-def get_similarity_dataset(dataset):
-    similarity_dataset = {
-        'articles': []
-    }
-    for _, row in dataset.iterrows():
-        dict_t = {
-            'sim_title_subtitle': None,
-            'sim_title_text': None,
-            'sim_text_subtitle': None,
-            'sim_between_parapraphs': None,
-            'fake': None
-        }
-        tokendata = get_all_text_tokenized(row, True)
-
-        dict_t['sim_title_text'] = s.get_jaccard_similarity(tokendata['text']['joined_raw'], tokendata['title']['sent'][0])
-        if row['subtitle'] == '':
-            dict_t['sim_title_subtitle'] = None
-            dict_t['sim_text_subtitle'] = None
-        else:
-            dict_t['sim_title_subtitle'] = s.get_jaccard_similarity(
-                tokendata['title']['sent'][0], tokendata['subtitle']['sent'][0])
-            dict_t['sim_text_subtitle'] = s.get_jaccard_similarity(
-                 tokendata['text']['joined_raw'], tokendata['subtitle']['sent'][0])
-        # Tokens
-        #dict_t['sim_between_parapraphs'] = s.get_similarity_between_texts(tokendata['text']['paragraph'])
-        dict_t['fake'] = row['fake']
-        similarity_dataset['articles'].append(dict_t)
-    return similarity_dataset

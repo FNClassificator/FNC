@@ -52,15 +52,19 @@ def perct_conj_words(tag_tokens):
 def mean_word_per_sent(sent_tokens):
     t_sum = 0
     for sent in sent_tokens:
-        t_sum += len(sent)
+        words_of_sent = sent.split(' ')
+        
+        t_sum += len(words_of_sent)
     return t_sum / len(sent_tokens)
 
 
 def mean_characters_per_word(texts_tokens):
     t_sum = 0
     total = 0
+    print(texts_tokens)
     for sent in texts_tokens:
-        for word in sent:
+        words_of_sent = sent.split(' ')
+        for word in words_of_sent:
             total += 1
             t_sum += len(word)
     return t_sum / total

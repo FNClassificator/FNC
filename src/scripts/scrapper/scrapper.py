@@ -183,12 +183,13 @@ def get_all_news(path, is_fake, n):
 
 
 def run(n):
-    path = 'src/data/list_url_2.json'
+
+    path = 'src/data/list_url_real_2.json'
     n = get_all_news(path, False, n)
     print(n)
 
 
 if __name__ == '__main__':
     # From
-    n = 63
+    n = 124
     run(n)

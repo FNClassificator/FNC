@@ -12,3 +12,4 @@ matplotlib
 spacy
 gensim
 seaborn
+tqdm

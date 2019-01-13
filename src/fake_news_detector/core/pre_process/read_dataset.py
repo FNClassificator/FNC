@@ -11,7 +11,7 @@ def modelate_dataset():
 		'articles' : []
 	}
 	n_ini = 1
-	n_fi = 116
+	n_fi = 141
 	for x in range(n_ini,n_fi):
 		path =  'src/data/articles_en/Article_' + str(x) + '.json'
 		# Read file

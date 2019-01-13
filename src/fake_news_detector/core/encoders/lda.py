@@ -7,28 +7,16 @@ import numpy as np
 ##############################
 
 
-class Word2Vec_model():
+class LDA_model():
 
-    def __init__(self, num_features, num_features, context):
-        self.num_features = dictionary
-        self.min_word_count = num_topics
-        self.num_workers = 4
-        self.context = context
-        self.model = None
-        self.downsampling = 1e-3
+    def __init__(self, dictionary, num_topics):
+        self.dictionary = dictionary
+        self.num_topics = num_topics
+        self.lda_model = None
 
     # LDA Model
-    def create_model(self, sententes):
-        return  Word2Vec(sentences=sentences,
-                    sg = 1,
-                    hs = 0,
-                    workers = self.num_workers,
-                    size = self.num_features,
-                    min_count = self.min_word_count,
-                    window = self.context,
-                    sample = self.downsampling,
-                    negative=5,
-                    iter=6)
+    def create_model(self, data):
+        return LdaMulticore(data, num_topics=self.num_topics, id2word=self.dictionary, passes=2, workers=2)
 
     # Transformations
     def get_document_distribution(self,document, min_prob=0):
