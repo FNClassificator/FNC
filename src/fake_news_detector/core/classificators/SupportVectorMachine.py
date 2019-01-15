@@ -1,7 +1,7 @@
 
 from sklearn.svm import SVC
 from src.fake_news_detector.core.classificators import helpers
-
+from sklearn.model_selection import GridSearchCV
 
 #  SVC
 
@@ -35,6 +35,15 @@ def train(model, x_train, y_train):
 # PREDICT
 #####################
 
+def svc_param_selection(X, y, nfolds, kernel):
+    Cs = [0.001, 0.01, 0.1, 1, 10]
+    gammas = [0.001, 0.01, 0.1, 1]
+    param_grid = {'C': Cs, 'gamma' : gammas}
+    grid_search = GridSearchCV(SVC(kernel=kernel), param_grid, cv=nfolds)
+    grid_search.fit(X, y)
+    grid_search.best_params_
+    return grid_search.best_params_
+
 def precit_all(model, x_test):
     return model.predict(x_test)
 
@@ -56,3 +65,33 @@ def run_models(models, x_train, y_train, x_test, y_test):
         scores[model]['train'] =  score_train
         scores[model]['test'] = score_test
     return scores
+
+def run_optimals_models(x_train, y_train, x_test, y_test, output):
+    kernels = ['rbf', 'linear', 'poly', 'sigmoid']
+    score_models = {}
+    for kernel in kernels:
+        # Get optimal params
+        params = svc_param_selection(x_train, y_train, 2, kernel)
+        svm_model = SVC(kernel=kernel, C= params['C'], gamma=params['gamma'])
+        score_models[kernel] = {}
+        score_models[kernel]['train'],  score_models[kernel]['test'] = run_model(svm_model, x_train, y_train, x_test, y_test, False)
+    # Get top score and model
+    # Pos 0: Kernel
+    # Pos 1: Score
+    max_validation = [None, 0]
+    max_training = [None, 0]
+
+    for kernel in score_models:
+        if output:
+            print('For model', kernel)
+            print('Training score: {}. Test score: {}'.format(score_models[kernel]['train'],score_models[kernel]['test']))
+        # Check training
+        if score_models[kernel]['train'] > max_training[1]:
+            max_training[0] = kernel
+            max_training[1] = score_models[kernel]['train']
+        # Check validation
+        if score_models[kernel]['test'] > max_validation[1]:
+            max_validation[0] = kernel
+            max_validation[1] = score_models[kernel]['test']
+    return max_training + max_validation
+
