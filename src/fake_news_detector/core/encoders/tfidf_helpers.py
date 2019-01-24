@@ -36,7 +36,6 @@ def sort_coo(coo_matrix):
     tuples = zip(coo_matrix.col, coo_matrix.data)
     return sorted(tuples, key=lambda x: (x[1], x[0]), reverse=True)
 
-
 def get_cosine_similarity(q1_csc, q2_csc):
     cosine_sim = []
     for i,j in zip(q1_csc, q2_csc):

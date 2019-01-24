@@ -6,6 +6,9 @@ import numpy as np
 ## TOPIC MODELING WITH LDA ###
 ##############################
 
+def print_topics(lda_model):
+    for idx, topic in lda_model.print_topics(-1):
+        print('Topic: {} \nWords: {}'.format(idx, topic))
 
 class LDA_model():
 
@@ -54,6 +57,3 @@ class LDA_model():
         return train_lda_data, test_lda_data
 
     # MODEL INFO
-    def print_topics(self):
-        for idx, topic in self.lda_model.print_topics(-1):
-            print('Topic: {} \nWords: {}'.format(idx, topic))
